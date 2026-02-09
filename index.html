@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wild Cafe Ella - A cosy jungle-style café in the heart of Ella, Sri Lanka. Fresh breakfast, lunch and dinner offering hoppers, rotti, and comfort food.">
+    <title>Wild Cafe Ella - Jungle Style Café in the Heart of Ella</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>🌿</span> WILD CAFE <span style="font-size: 14px; color: var(--text-gray);">ELLA</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>4.9 Google Rating (400+ reviews)</span>
+            </div>
+            <h1>GO <span class="highlight">WILD</span></h1>
+            <p class="hero-subtitle">A cosy jungle-style café in the heart of Ella, Sri Lanka<br>Fresh breakfast, lunch and dinner offering hoppers, rotti, and 'go wild' comfort food</p>
+            <div class="hero-buttons">
+                <a href="pages/menu.html" class="btn btn-primary">Explore Menu</a>
+                <a href="tel:+94702028637" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+            <div class="hero-info">
+                <div class="info-item">
+                    <i class="fas fa-wifi"></i>
+                    <span>Free WiFi</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>All Day Breakfast</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Fresh Local Ingredients</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="offers">
+        <div class="container">
+            <h2>What We <span class="highlight">Offer</span></h2>
+            <p class="section-subtitle">Experience authentic Sri Lankan cuisine with a modern twist</p>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800" alt="Traditional Sri Lankan Hoppers">
+                    <div class="offer-overlay">
+                        <h3>Traditional Hoppers</h3>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800" alt="Signature Kottu">
+                    <div class="offer-overlay">
+                        <h3>Signature Kottu</h3>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800" alt="Rice & Curry">
+                    <div class="offer-overlay">
+                        <h3>Rice & Curry</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2>Unforgettable <span class="highlight">Experience</span></h2>
+            <p class="section-subtitle">Where authentic flavors meet stunning mountain views</p>
+            <a href="pages/about.html" class="btn btn-primary">Learn Our Story</a>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2>Explore Our <span class="highlight">Menu</span></h2>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="breakfast">Breakfast</button>
+                <button class="tab-btn" data-category="hoppers">Hoppers</button>
+                <button class="tab-btn" data-category="kottu">Kottu</button>
+                <button class="tab-btn" data-category="rice">Rice & Curry</button>
+            </div>
+
+            <div class="menu-items" id="menuItems">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="pages/menu.html" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span style="font-size: 24px;">🌿</span>
+                    </div>
+                    <h3>Wild Cafe Ella</h3>
+                    <p>A cosy jungle-style café in the heart of Ella, offering authentic Sri Lankan cuisine with fresh, local ingredients.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/wildcafeella" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/wildcafeella" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/menu.html">Menu</a></li>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> No 62 Main Street, Ella 90090, Sri Lanka</p>
+                    <p><i class="fas fa-phone"></i> +94 (70) 202 8637</p>
+                    <p><i class="fas fa-envelope"></i> info@wildcafeella.com</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Opening Hours</h3>
+                    <p><i class="fas fa-clock"></i> Monday - Sunday</p>
+                    <p>9:00 AM - 10:00 PM</p>
+                    <br>
+                    <p><i class="fas fa-wifi"></i> Free WiFi Available</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wild Cafe Ella. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Menu Items -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <div class="modal-tags" id="modalTags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
