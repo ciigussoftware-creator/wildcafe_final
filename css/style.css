@@ -645,22 +645,25 @@ body {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: start;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
 }
 
 .contact-card {
     background-color: var(--darker-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 30px;
+    padding: 16px 18px;
     transition: all 0.3s;
+    height: 100%;
 }
 
 .contact-card:hover {
@@ -668,32 +671,37 @@ body {
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     background-color: rgba(61, 184, 84, 0.1);
     border: 2px solid var(--primary-green);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .contact-icon i {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--primary-green);
 }
 
 .contact-card h4 {
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 17px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
 .contact-card p {
     color: var(--text-gray);
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contact-card p + p {
+    margin-top: 6px;
 }
 
 .highlight-time {
@@ -707,13 +715,15 @@ body {
 
 .social-links {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .social-link {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     background-color: rgba(61, 184, 84, 0.1);
     border: 2px solid var(--primary-green);
     border-radius: 50%;
@@ -721,7 +731,7 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--primary-green);
-    font-size: 20px;
+    font-size: 17px;
     transition: all 0.3s;
 }
 
@@ -733,10 +743,25 @@ body {
 
 .contact-map {
     height: 100%;
-    min-height: 600px;
+    min-height: 260px;
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
+}
+
+.contact-section .social-card .social-links{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+}
+
+.contact-section .social-card .social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */
@@ -1378,6 +1403,15 @@ body {
     .quote-section p {
         font-size: 22px;
     }
+
+    /* contact section (responsive) */
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-map {
+        min-height: 220px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1410,5 +1444,28 @@ body {
     
     .about-image {
         height: 300px;
+    }
+
+    /* contact section (responsive) */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+        min-height: 200px;
+    }
+
+    .contact-section .social-links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
+
+    .contact-section .social-link {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
     }
 }
