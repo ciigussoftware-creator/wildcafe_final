@@ -1424,7 +1424,14 @@ body {
 /* Additional Responsive Adjustments */
 @media (max-width: 968px) {
     .values-grid {
-        grid-template-columns: repeat(2, 1fr);
+        /* about us */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+    }
+    /* Ella spacing fix still needed on tablet */
+    .values-grid > .value-card:nth-of-type(1) h4{
+        margin-bottom: 45px;
     }
     
     .info-grid {
@@ -1451,6 +1458,21 @@ body {
 @media (max-width: 600px) {
     .values-grid {
         grid-template-columns: 1fr;
+         gap: 18px;
+        margin-top: 25px;
+    }
+      .about-header h2{
+    line-height: 1.2;
+  }
+
+  .about-header h2 .highlight{
+    display: block;        /* Wild Cafe Ella goes to next line */
+    white-space: nowrap;   /* keeps Wild Cafe Ella in one line */
+  }
+
+     /* On mobile, remove extra gap because cards stack */
+    .values-grid > .value-card:nth-of-type(1) h4{
+        margin-bottom: 15px;
     }
     
     .info-grid {
@@ -1479,31 +1501,9 @@ body {
     .about-image {
         height: 300px;
     }
-    @media (max-width: 640px){
-  .about-section{
-    padding: 60px 0;          /* was 100px 0 */
-  }
-
-  .values-section{
-    margin-bottom: 30px;      /* was 80px */
-  }
-
-  .values-grid{
-    margin-top: 25px;         /* was 50px */
-    gap: 18px;                /* reduce space between cards */
-  }
+   
 }
-@media (max-width: 640px){
-  .about-header h2{
-    font-size: 26px;
-    line-height: 1.2;
-  }
 
-  .about-header h2 .highlight{
-    display: block;        /* puts Wild Cafe Ella on the next line */
-    white-space: nowrap;   /* keeps Wild Cafe Ella in ONE line */
-  }
-}
 
 
 
@@ -1514,4 +1514,4 @@ body {
 
 
     
-}
+
