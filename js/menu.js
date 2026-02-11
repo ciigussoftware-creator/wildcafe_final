@@ -43,37 +43,38 @@ const fullMenuData = {
         { id: 34, name: "Veg Fried Rice", description: "Vegetarian fried rice", price: "Rs. 600", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true }
     ],
     roti: [
-        { id: 35, name: "Coconut Roti with Chicken Curry", description: "Traditional coconut roti with chicken curry", price: "Rs. 800", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: [], isVeg: false },
-        { id: 36, name: "Coconut Roti with Dhal Curry", description: "Traditional coconut roti with dhal curry", price: "Rs. 600", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 37, name: "Chocolate Roti", description: "Sweet roti with chocolate", price: "Rs. 550", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 38, name: "Chocolate & Banana Roti", description: "Sweet roti with chocolate and banana", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 39, name: "Mango & Honey Roti", description: "Sweet roti with mango and honey", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 40, name: "Coconut & Honey Roti", description: "Sweet roti with coconut and honey", price: "Rs. 600", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true }
+        { id: 35, name: "Coconut Roti with dhal curry & coconut sambal", description: "",modalDescription: "Flour, fresh coconut, saltchoice of protein  Egg or chicken", price: "Rs. 800", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: [], isVeg: false },
+        { id: 36, name: "Coconut Roti with chicken curry ", description: "", modalDescription: "Traditional coconut roti with dhal curry", price: "Rs. 600", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 37, name: "Chocolate Roti", description: "", modalDescription: "Sweet roti with chocolate", price: "Rs. 550", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 38, name: "Chocolate & Banana Roti", description: "", modalDescription: "Sweet roti with chocolate and banana", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 39, name: "Chocolate & Honey Roti", description: "", modalDescription: "Sweet roti with chocolate and banana", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 40, name: "Mango & Honey Roti", description: "", modalDescription: "Sweet roti with mango and honey", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 41, name: "Coconut & Honey Roti", description: "", modalDescription: "Sweet roti with coconut and honey", price: "Rs. 600", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true }
     ],
     pasta: [
-        { id: 41, name: "All You Can Eat Pasta", description: "Unlimited pasta buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["popular"], isVeg: false },
-        { id: 42, name: "Chicken Curry Pasta", description: "Pasta with chicken curry, vegetables, coconut milk", price: "Rs. 1,100", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
-        { id: 43, name: "Egg Curry Pasta", description: "Pasta with egg curry and vegetables", price: "Rs. 900", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
-        { id: 44, name: "Kiri Hodi Pasta", description: "Pasta with traditional kiri hodi (coconut gravy)", price: "Rs. 850", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["veg"], isVeg: true },
-        { id: 45, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
+        { id: 42, name: "All You Can Eat Pasta", description: "Unlimited pasta buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["popular"], isVeg: false },
+        { id: 43, name: "Chicken Curry Pasta", description: "Pasta with chicken curry, vegetables, coconut milk", price: "Rs. 1,100", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
+        { id: 44, name: "Egg Curry Pasta", description: "Pasta with egg curry and vegetables", price: "Rs. 900", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
+        { id: 45, name: "Kiri Hodi Pasta", description: "Pasta with traditional kiri hodi (coconut gravy)", price: "Rs. 850", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["veg"], isVeg: true },
+        { id: 46, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
     ],
     burgers: [
-        { id: 46, name: "Chicken Burger", description: "Coconut roti bun, grilled chicken, veggies, mayo, ketchup - fries on the side", price: "Rs. 900", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 47, name: "Egg Burger", description: "Coconut roti bun, eggs, veggies, mayo, ketchup - fries on the side", price: "Rs. 750", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 48, name: "Veg Burger", description: "Coconut roti bun, fresh veggies, mayo, ketchup - fries on the side", price: "Rs. 650", image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800", tags: ["veg"], isVeg: true },
-        { id: 49, name: "Chicken Sandwich", description: "Roasted bread, grilled chicken, veggies, mayo", price: "Rs. 850", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
-        { id: 50, name: "Egg Sandwich", description: "Roasted bread, eggs, veggies, mayo", price: "Rs. 700", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
-        { id: 51, name: "Veg Sandwich", description: "Roasted bread, fresh veggies, mayo", price: "Rs. 600", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: ["veg"], isVeg: true }
+        { id: 47, name: "Chicken Burger", description: "Coconut roti bun, grilled chicken, veggies, mayo, ketchup - fries on the side", price: "Rs. 900", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 48, name: "Egg Burger", description: "Coconut roti bun, eggs, veggies, mayo, ketchup - fries on the side", price: "Rs. 750", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 49, name: "Veg Burger", description: "Coconut roti bun, fresh veggies, mayo, ketchup - fries on the side", price: "Rs. 650", image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800", tags: ["veg"], isVeg: true },
+        { id: 50, name: "Chicken Sandwich", description: "Roasted bread, grilled chicken, veggies, mayo", price: "Rs. 850", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
+        { id: 51, name: "Egg Sandwich", description: "Roasted bread, eggs, veggies, mayo", price: "Rs. 700", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
+        { id: 52, name: "Veg Sandwich", description: "Roasted bread, fresh veggies, mayo", price: "Rs. 600", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: ["veg"], isVeg: true }
     ],
     drinks: [
-        { id: 52, name: "Milk Coffee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 53, name: "Black Coffee", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 54, name: "Milk Tea", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 55, name: "Black Tea", description: "Pure Ceylon black tea", price: "Rs. 250", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 56, name: "Fresh Juice", description: "Seasonal fresh fruit juice", price: "Rs. 450", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
-        { id: 57, name: "Wild Cocodream", description: "Special coconut-based drink", price: "Rs. 600", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["popular", "veg"], isVeg: true },
-        { id: 58, name: "Go Wild", description: "Signature energy drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
-        { id: 59, name: "Come Wild", description: "Refreshing tropical drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true }
+        { id: 53, name: "Milk Coffee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 54, name: "Black Coffee", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 55, name: "Milk Tea", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 56, name: "Black Tea", description: "Pure Ceylon black tea", price: "Rs. 250", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 57, name: "Fresh Juice", description: "Seasonal fresh fruit juice", price: "Rs. 450", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
+        { id: 58, name: "Wild Cocodream", description: "Special coconut-based drink", price: "Rs. 600", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["popular", "veg"], isVeg: true },
+        { id: 59, name: "Go Wild", description: "Signature energy drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
+        { id: 60, name: "Come Wild", description: "Refreshing tropical drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true }
     ]
 };
 
@@ -137,7 +138,7 @@ function displayMenuItems(category) {
                     ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
                 </div>
             </div>
-            <p class="menu-item-description">${item.description}</p>
+            ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
             <div class="menu-item-price">${item.price}</div>
         </div>
     `).join('');
@@ -162,7 +163,8 @@ function openModal(itemId, category) {
     if (!item || !modal) return;
     
     document.getElementById('modalTitle').textContent = item.name;
-    document.getElementById('modalDescription').textContent = item.description;
+    document.getElementById('modalDescription').textContent =
+    item.modalDescription || item.description;
     document.getElementById('modalPrice').textContent = item.price;
     document.getElementById('modalImage').src = item.image;
     
