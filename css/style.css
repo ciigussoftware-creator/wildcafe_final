@@ -508,12 +508,28 @@ body {
     margin-bottom: 50px;
 }
 
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+.values-grid{
+  display: grid;
+  gap: 30px;
+  margin-top: 50px;
+
+  /* 3 nice columns on large screens */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
+@media (max-width: 1024px){
+  .values-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px){
+  .values-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 .value-card {
     background-color: var(--darker-bg);
@@ -522,6 +538,39 @@ body {
     padding: 40px 25px;
     transition: all 0.3s;
 }
+.value-card{ position: relative; overflow: hidden; }
+
+.value-card .location-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;     /* CHANGED */
+  z-index: 0;
+}
+
+.value-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.30);  /* CHANGED */
+  z-index: 0;
+}
+
+.value-card > *{
+  position: relative;
+  z-index: 1;
+}
+
+
+/* keep card content above image + overlay */
+.value-card > *{
+  position: relative;
+  z-index: 1;
+}
+
+
 
 .value-card:hover {
     border-color: var(--primary-green);
@@ -556,7 +605,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
 }
-
+/* 
 .quote-section {
     background: linear-gradient(135deg, rgba(61, 184, 84, 0.1), rgba(45, 80, 22, 0.1));
     border-left: 4px solid var(--primary-green);
@@ -581,7 +630,7 @@ body {
     color: var(--primary-green);
     font-style: normal;
     font-weight: 600;
-}
+} */
 
 /* Gallery Section */
 .gallery-section {
@@ -1100,9 +1149,18 @@ body {
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    /* 3 cards (Our Locations) */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
+
+    /* keeps spacing balanced on wide screens */
+    margin-top: 50px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .value-card {
     background-color: var(--darker-bg);
@@ -1118,10 +1176,20 @@ body {
     transform: translateY(-5px);
 }
 
-.value-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
+.value-icon{
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;     /* centers the icon container */
+  border-radius: 50%;
+  display: flex;           /* centers emoji inside */
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(61, 184, 84, 0.1);
+  border: 2px solid var(--primary-green);
+  font-size: 34px;
 }
+
 
 .value-card h4 {
     font-size: 22px;
@@ -1381,7 +1449,14 @@ body {
 /* Additional Responsive Adjustments */
 @media (max-width: 968px) {
     .values-grid {
-        grid-template-columns: repeat(2, 1fr);
+        /* about us */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+    }
+    /* Ella spacing fix still needed on tablet */
+    .values-grid > .value-card:nth-of-type(1) h4{
+        margin-bottom: 45px;
     }
     
     .info-grid {
@@ -1417,6 +1492,21 @@ body {
 @media (max-width: 600px) {
     .values-grid {
         grid-template-columns: 1fr;
+         gap: 18px;
+        margin-top: 25px;
+    }
+      .about-header h2{
+    line-height: 1.2;
+  }
+
+  .about-header h2 .highlight{
+    display: block;        /* Wild Cafe Ella goes to next line */
+    white-space: nowrap;   /* keeps Wild Cafe Ella in one line */
+  }
+
+     /* On mobile, remove extra gap because cards stack */
+    .values-grid > .value-card:nth-of-type(1) h4{
+        margin-bottom: 15px;
     }
     
     .info-grid {
@@ -1445,27 +1535,17 @@ body {
     .about-image {
         height: 300px;
     }
-
-    /* contact section (responsive) */
-    .contact-info {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-map {
-        min-height: 200px;
-    }
-
-    .contact-section .social-links {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: nowrap;
-    }
-
-    .contact-section .social-link {
-        width: 42px;
-        height: 42px;
-        font-size: 17px;
-    }
+   
 }
+
+
+
+
+
+
+
+
+
+
+    
+
