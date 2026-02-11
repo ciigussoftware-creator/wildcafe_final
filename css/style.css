@@ -1026,6 +1026,30 @@ body {
     .hero-buttons {
         flex-direction: column;
     }
+    .rating {
+        gap: 4px;
+        margin-bottom: 20px;
+    }
+
+    .rating i {
+        font-size: 14px;
+    }
+
+    .rating span {
+        font-size: 12px;
+    }
+
+    .hero-info {
+        gap: 15px;
+    }
+
+    .info-item {
+        font-size: 12px;
+    }
+
+    .info-item i {
+        font-size: 14px;
+    }
 
     .values-grid {
         grid-template-columns: 1fr;
