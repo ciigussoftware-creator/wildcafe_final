@@ -34,13 +34,17 @@ const fullMenuData = {
         { id: 27, name: "Cheese & Veg Kottu", description: "Vegetarian kottu with melted cheese", price: "Rs. 850", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true }
     ],
     rice: [
-        { id: 28, name: "All You Can Eat Rice & Curry", description: "Unlimited rice and curry buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
-        { id: 29, name: "Chicken Rice & Curry", description: "Authentic Sri Lankan rice and curry with chicken", price: "Rs. 950", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
-        { id: 30, name: "Egg Rice & Curry", description: "Traditional rice and curry with egg", price: "Rs. 750", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
-        { id: 31, name: "Veg Rice & Curry", description: "Vegetarian rice and curry", price: "Rs. 650", image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=800", tags: ["veg"], isVeg: true },
-        { id: 32, name: "Wild Chicken Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, and chicken", price: "Rs. 900", image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800", tags: [], isVeg: false },
-        { id: 33, name: "Egg Fried Rice", description: "Classic egg fried rice", price: "Rs. 700", image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800", tags: [], isVeg: false },
-        { id: 34, name: "Veg Fried Rice", description: "Vegetarian fried rice", price: "Rs. 600", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true }
+        { id: 28, name: "All You Can Eat Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
+        { id: 29, name: "Chicken Rice & Curry from sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
+        { id: 30, name: "Egg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+        { id: 31, name: "Veg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=800", tags: ["veg"], isVeg: true },
+       
+    ],
+     milkrice: [
+        { id: 28, name: "Milk Rice with Onion Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
+        { id: 29, name: "Milk Rice with Chicken Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
+        { id: 30, name: "Milk Rice with Sweet Coconut and Honey (14 oz)", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+       
     ],
     roti: [
         { id: 35, name: "Coconut Roti with dhal curry & coconut sambal", description: "",modalDescription: "Flour, fresh coconut, saltchoice of protein  Egg or chicken", price: "Rs. 800", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: [], isVeg: false },
