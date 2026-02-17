@@ -59,10 +59,17 @@ const fullMenuData = {
         { id: 46, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
     ],
     burgers: [
-        { id: 47, name: "Egg Burger(SL Omlette)", description: "fries on the side",modalDescription: "Coconut roti burger with SL styled omlette and fries on the side",image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 48, name: "Veg Burger", description: "fries on the side",modalDescription: "full vegetarian Coconut roti burger with fries on the side", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: true },
-        { id: 49, name: "Chicken Burger", description: "fries on the side",modalDescription: " Coconut roti burger with chicken patty and fries on the side", image: "images/menu/coconut_roti_burger/coconut_roti_burger_chicken.png", tags: ["veg"], isVeg: false }
+        { id: 47, name: "Egg Burger(SL Omlette)", description: "fries on the side",modalDescription: "Coconut roti burger with SL styled omlette and fries on the side. Request to add more cheese",image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 48, name: "Veg Burger", description: "fries on the side",modalDescription: "full vegetarian Coconut roti burger with fries on the side. Request to add more cheese ", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: true },
+        { id: 49, name: "Chicken Burger", description: "fries on the side",modalDescription: " Coconut roti burger with chicken patty and fries on the side. Request to add more cheese", image: "images/menu/coconut_roti_burger/coconut_roti_burger_chicken.png", tags: ["veg"], isVeg: false }
     ],
+    sandwich: [
+        { id: 50, name: "Cheese Melt Sandwich", description: "fries on the side ", modalDescription: "Toasted bread with cheese and vegetables",  image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: ["veg"], isVeg: true },
+        { id: 51, name: "Egg Sandwich", description: "fries on the side", modalDescription: "Egg Sandwich with fries on the side", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 52, name: "Chicken Sandwich", description: "fries on the side", modalDescription: "Toasted bread with chicken and fries", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 61, name: "Veg Sandwich", description: "fries on the side", modalDescription: "Toasted bread with vegetables and fries", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: ["veg"], isVeg: true },
+    ],
+    
     drinks: [
         { id: 53, name: "Milk Coffee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
         { id: 54, name: "Black Coffee", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
