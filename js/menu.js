@@ -59,12 +59,9 @@ const fullMenuData = {
         { id: 46, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
     ],
     burgers: [
-        { id: 47, name: "Chicken Burger", description: "Coconut roti bun, grilled chicken, veggies, mayo, ketchup - fries on the side", price: "Rs. 900", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 48, name: "Egg Burger", description: "Coconut roti bun, eggs, veggies, mayo, ketchup - fries on the side", price: "Rs. 750", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 49, name: "Veg Burger", description: "Coconut roti bun, fresh veggies, mayo, ketchup - fries on the side", price: "Rs. 650", image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800", tags: ["veg"], isVeg: true },
-        { id: 50, name: "Chicken Sandwich", description: "Roasted bread, grilled chicken, veggies, mayo", price: "Rs. 850", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
-        { id: 51, name: "Egg Sandwich", description: "Roasted bread, eggs, veggies, mayo", price: "Rs. 700", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
-        { id: 52, name: "Veg Sandwich", description: "Roasted bread, fresh veggies, mayo", price: "Rs. 600", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: ["veg"], isVeg: true }
+        { id: 47, name: "Egg Burger(SL Omlette)", description: "fries on the side",modalDescription: "Coconut roti burger with SL styled omlette and fries on the side",image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 48, name: "Veg Burger", description: "fries on the side",modalDescription: "full vegetarian Coconut roti burger with fries on the side", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: true },
+        { id: 49, name: "Chicken Burger", description: "fries on the side",modalDescription: " Coconut roti burger with chicken patty and fries on the side", image: "images/menu/coconut_roti_burger/coconut_roti_burger_chicken.png", tags: ["veg"], isVeg: false }
     ],
     drinks: [
         { id: 53, name: "Milk Coffee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
