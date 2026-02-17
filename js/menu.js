@@ -139,7 +139,6 @@ function displayMenuItems(category) {
                 </div>
             </div>
             ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-            <div class="menu-item-price">${item.price}</div>
         </div>
     `).join('');
     
@@ -165,7 +164,7 @@ function openModal(itemId, category) {
     document.getElementById('modalTitle').textContent = item.name;
     document.getElementById('modalDescription').textContent =
     item.modalDescription || item.description;
-    document.getElementById('modalPrice').textContent = item.price;
+    // document.getElementById('modalPrice').textContent = item.price;
     document.getElementById('modalImage').src = item.image;
     
     const tagsContainer = document.getElementById('modalTags');
