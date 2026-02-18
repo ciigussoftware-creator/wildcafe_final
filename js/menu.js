@@ -41,14 +41,18 @@ const fullMenuData = {
         { id: 17, name: "Fruit Hopper", description: "Sweet hopper with fresh fruits", price: "Rs. 600", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true },
         { id: 18, name: "Chocolate & Banana Hopper", description: "Sweet hopper with chocolate and banana", price: "Rs. 450", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true }
     ],
-rice: [
-        { id: 28, name: "All You Can Eat Rice & Curry", description: "Unlimited rice and curry buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
-        { id: 29, name: "Chicken Rice & Curry", description: "Authentic Sri Lankan rice and curry with chicken", price: "Rs. 950", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
-        { id: 30, name: "Egg Rice & Curry", description: "Traditional rice and curry with egg", price: "Rs. 750", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
-        { id: 31, name: "Veg Rice & Curry", description: "Vegetarian rice and curry", price: "Rs. 650", image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=800", tags: ["veg"], isVeg: true },
-        { id: 32, name: "Wild Chicken Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, and chicken", price: "Rs. 900", image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800", tags: [], isVeg: false },
-        { id: 33, name: "Egg Fried Rice", description: "Classic egg fried rice", price: "Rs. 700", image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800", tags: [], isVeg: false },
-        { id: 34, name: "Veg Fried Rice", description: "Vegetarian fried rice", price: "Rs. 600", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true }
+    rice: [
+        { id: 401, name: "All You Can Eat Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
+        { id: 402, name: "Chicken Rice & Curry from sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
+        { id: 403, name: "Egg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+        { id: 404, name: "Veg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=800", tags: ["veg"], isVeg: true },
+       
+    ],
+     milkrice: [
+        { id: 405, name: "Milk Rice with Onion Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
+        { id: 406, name: "Milk Rice with Chicken Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
+        { id: 407, name: "Milk Rice with Sweet Coconut and Honey (14 oz)", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+       
     ],
     roti: [
         { id: 35, name: "Coconut Roti with dhal curry & coconut sambal", description: "",modalDescription: "Flour, fresh coconut, saltchoice of protein  Egg or chicken", price: "Rs. 800", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: [], isVeg: false },
@@ -75,33 +79,55 @@ rice: [
         { id: 52, name: "Veg Sandwich", description: "Roasted bread, fresh veggies, mayo", price: "Rs. 600", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: ["veg"], isVeg: true }
     ],
     drinks: [
-        { id: 53, name: "Milk Coffee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 54, name: "Black Coffee", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 55, name: "Milk Tea", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 56, name: "Black Tea", description: "Pure Ceylon black tea", price: "Rs. 250", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 57, name: "Fresh Juice", description: "Seasonal fresh fruit juice", price: "Rs. 450", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
-        { id: 58, name: "Wild Cocodream", description: "Special coconut-based drink", price: "Rs. 600", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["popular", "veg"], isVeg: true },
-        { id: 59, name: "Go Wild", description: "Signature energy drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
-        { id: 60, name: "Come Wild", description: "Refreshing tropical drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true }
+        // HOT DRINKS
+        { id: 53, name: "Black Coffee", description: "Strong black coffee", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "hot" },
+        { id: 54, name: "Milk Coffee", description: "Coffee with milk", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "hot" },
+        { id: 55, name: "Chai Tea", description: "Traditional Sri Lankan chai tea", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 56, name: "Black Tea", description: "Strong black tea", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 57, name: "Milk Tea", description: "Tea with milk and sugar", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 58, name: "Herbal Tea (Samahan)", description:"Traditional herbal tea made from local herbs and spices", price:"", image:"https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags:[], drinkType:"hot"},
+        { id: 59, name: "Green Tea", description: "Fresh green tea", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 60, name: "Honey Lemon Tea", description: "Honey and lemon tea blend", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 61, name: "Hibiscus Tea", description: "Sour hibiscus tea with natural sweetness", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 62, name: "Blue Pea Tea", description: "Blue pea flower tea with natural blue color", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+
+        // COOL DRINKS
+        { id: 63, name: "Iced Coffee", description: "Cold brew coffee served over ice", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "cool" },
+        { id: 64, name: "Iced Tea", description: "Chilled tea served over ice", price: "", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800", tags: [], drinkType: "cool" },
+
+        { id: 65, name: "Pineapple", description: "Fresh pineapple juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 66, name: "Mango", description: "Fresh mango juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 67, name: "Passion Fruit", description: "Fresh passion fruit juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 68, name: "Watermelon", description: "Fresh watermelon juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 69, name: "Banana", description: "Fresh banana juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 70, name: "Papaya", description: "Fresh papaya juice", price: "", image:"https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags:["veg"], drinkType:"cool"},
+        { id: 71, name: "Lime", description: "Fresh lime juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 72, name: "Mixed Fruit", description: "Mixed fruit juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 73, name: "Carrot", description: "Fresh carrot juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType:"cool"},
+        { id: 74, name:"Banana & Carrot", description:"Banana and carrot juice mix", price:"", image:"https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags:["veg"], drinkType:"cool"},
+        { id: 75, name:"Mango & Carrot" , description:"Mango and carrot juice mix" , price:"", image:"https://images.unsplash.com/photo-1546548970-71785318a17b?w=800" , tags:["veg"] , drinkType:"cool"},
+        { id: 76, name:"SL Lemonade" , description:"Sri Lankan style lemonade with local ingredients" , price:"", image:"https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800" , tags:["veg"] , drinkType:"cool"},
+
+        { id: 77, name: "Coca-Cola", description: "Classic Coca-Cola", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 78, name: "Sprite", description: "Refreshing Sprite", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 79, name: "Ginger Beer", description: "Spicy ginger beer", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 80, name: "Ginger Ale", description: "Mild ginger ale", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 81, name: "Soda", description: "Refreshing soda", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 82, name: "Water (500ml)", description:"Bottled water in 500ml size", price:"", image:"https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=800", tags:[], drinkType:"cool"},
+        { id: 83, name: "Water (1000ml)", description: "Bottled water in 1000ml size", price: "", image: "https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=800", tags: [], drinkType: "cool" },
+],
+  
+    pancake: [
+        { id: 601, name: "Pancake with honey", description: "Rice flour, coconut, palm honey", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 602, name: "Sweet Coconut Honey Pancake", description: "Rice flour, coconut, palm honey", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 603, name: "Chocolate Pancake", description: "Rice flour, coconut, chocolate", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 604, name: "Chocolate & Banana Pancake", description: "Rice flour, coconut, chocolate, banana", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 605, name: "Mango & Honey Pancake", description: "Rice flour, coconut, mango, honey", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true }
     ],
-    smoothie: [
-        { id: 901, name: "Wild CocoDream", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 902, name: "Go Wild", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 903, name: "Come Wild", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
-    ],
-    desserts: [
-        { id: 904, name: "Creme Brulee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 905, name: "Chocolate & Banana Hoppers", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 906, name: "Fruits Hoppers", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 907, name: "Fruit Salad", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 908, name: "Caramel Pudding", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 909, name: "Sweet Coconut Honey Pancake", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 910, name: "Sweet Coconut Honey Milk Rice (70z)", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 911, name: "Chocolate Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 912, name: "Chocolate & Banana Roti", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 913, name: "Mango & Honey Roti", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 914, name: "Sweet Coconut Honey Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 915, name: "Pudding", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
+    friedrice: [
+        { id: 606, name: "Wild House Veg Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true },
+        { id: 607, name: "Wild House Egg Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+        { id: 608, name: "Wild House Chicken Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false }
     ]
 };
 
