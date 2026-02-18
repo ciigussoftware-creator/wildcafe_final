@@ -128,7 +128,27 @@ const fullMenuData = {
         { id: 606, name: "Wild House Veg Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true },
         { id: 607, name: "Wild House Egg Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
         { id: 608, name: "Wild House Chicken Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false }
+    ],
+    smoothie: [
+        { id: 901, name: "Wild CocoDream", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 902, name: "Go Wild", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 903, name: "Come Wild", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
+    ],
+    desserts: [
+        { id: 904, name: "Creme Brulee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 905, name: "Chocolate & Banana Hoppers", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 906, name: "Fruits Hoppers", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 907, name: "Fruit Salad", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 908, name: "Caramel Pudding", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 909, name: "Sweet Coconut Honey Pancake", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 910, name: "Sweet Coconut Honey Milk Rice (70z)", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 911, name: "Chocolate Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 912, name: "Chocolate & Banana Roti", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 913, name: "Mango & Honey Roti", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 914, name: "Sweet Coconut Honey Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 915, name: "Pudding", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
     ]
+
 };
 
 
@@ -142,153 +162,110 @@ if (hamburger) {
     });
 }
 
-const mainTabBtns = document.querySelectorAll('.tab-btn[data-category]');
-const drinkFilterWrap = document.getElementById('drinkFilters');
-const drinkBtns = document.querySelectorAll('.drink-btn');
+
+const tabBtns = document.querySelectorAll('.tab-btn');
 const menuItemsContainer = document.getElementById('menuItemsFull');
-
 let activeCategory = 'breakfast';
-let activeDrinkFilter = 'hot';
 
-// MAIN CATEGORY TAB CLICK
-mainTabBtns.forEach(btn => {
+tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-    mainTabBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    activeCategory = btn.getAttribute('data-category');
-
-    // Show/hide drink filter row
-    if (activeCategory === 'drinks') {
-    if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
-    // reset to ALL whenever entering drinks
-        setActiveDrinkFilter('hot');
-    } else {
-    if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
-        activeDrinkFilter = 'hot';
-    }
-
-    displayMenuItems(activeCategory);
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.getAttribute('data-category');
+        displayMenuItems(activeCategory);
+    });
 });
-});
-
-// DRINK FILTER CLICK
-drinkBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-    const type = btn.getAttribute('data-drink');
-    setActiveDrinkFilter(type);
-    displayMenuItems('drinks');
-});
-});
-
-function setActiveDrinkFilter(type) {
-    activeDrinkFilter = type;
-    drinkBtns.forEach(b => b.classList.remove('active'));
-    const activeBtn = document.querySelector(`.drink-btn[data-drink="${type}"]`);
-    if (activeBtn) activeBtn.classList.add('active');
-}
 
 
 displayMenuItems(activeCategory);
 
 
 function displayMenuItems(category) {
-    if (!menuItemsContainer) return;
+    const items = fullMenuData[category] || [];
+    menuItemsContainer.innerHTML = '';
 
-let items = fullMenuData[category] || [];
+    
+    if (category === "kottu") {
 
-  // Apply drink filter only for drinks
-    if (category === 'drinks' && activeDrinkFilter !== 'all') {
-    items = items.filter(i => i.drinkType === activeDrinkFilter);
-}
+        const grouped = {};
+        items.forEach(item => {
+            const group = item.group || "Others";
+            if (!grouped[group]) grouped[group] = [];
+            grouped[group].push(item);
+        });
 
-  // Empty
-    if (items.length === 0) {
-    menuItemsContainer.innerHTML =
-    '<p style="text-align:center; color: var(--text-gray);">No items available in this category.</p>';
-    return;
-}
+        Object.keys(grouped).forEach(groupName => {
 
-menuItemsContainer.innerHTML = '';
+            const groupId = groupName.replace(/\s+/g,'-').toLowerCase();
 
-// Special grouping for kottu (your existing logic)
-if (category === "kottu") {
-    const grouped = {};
-    items.forEach(item => {
-        const group = item.group || "Others";
-        if (!grouped[group]) grouped[group] = [];
-        grouped[group].push(item);
-});
+            menuItemsContainer.innerHTML += `
+                <div class="menu-group-title">${groupName}</div>
+                <div class="menu-group-grid" id="${groupId}"></div>
+            `;
 
-    Object.keys(grouped).forEach(groupName => {
-        const groupId = groupName.replace(/\s+/g, "-").toLowerCase();
+            const grid = document.getElementById(groupId);
 
-    menuItemsContainer.innerHTML += `
-        <div class="menu-group-title">${groupName}</div>
-        <div class="menu-group-grid" id="${groupId}"></div>
-`;
+            grouped[groupName].forEach(item => {
+                grid.innerHTML += `
+                    <div class="menu-item" data-id="${item.id}" data-category="${category}">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">${item.name}</h3>
+                            <div class="menu-item-badges">
+                                ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
+                                ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
+                            </div>
+                        </div>
+                        ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
+                    </div>
+                `;
+            });
+        });
 
-    const grid = document.getElementById(groupId);
+    } else {
+       
+        menuItemsContainer.innerHTML = items.map(item => `
+            <div class="menu-item" data-id="${item.id}" data-category="${category}">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">${item.name}</h3>
+                    <div class="menu-item-badges">
+                        ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
+                        ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
+                    </div>
+                </div>
+                ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
+            </div>
+        `).join('');
+    }
 
-        grouped[groupName].forEach(item => {
-        grid.innerHTML += menuCardTemplate(item, category);
-});
-});
-} else {
-    // Normal grid (same format)
-    menuItemsContainer.innerHTML = items.map(item => menuCardTemplate(item, category)).join('');
-}
+    
+    document.querySelectorAll('.menu-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const itemId = parseInt(item.getAttribute('data-id'));
+            const itemCategory = item.getAttribute('data-category');
+            const clickedItem = fullMenuData[itemCategory].find(i => i.id === itemId);
 
-  // Click handlers
-    document.querySelectorAll('.menu-item').forEach(card => {
-    card.addEventListener('click', () => {
-        const itemId = parseInt(card.getAttribute('data-id'));
-        const itemCategory = card.getAttribute('data-category');
-        const clickedItem = (fullMenuData[itemCategory] || []).find(i => i.id === itemId);
+            // Redirect logic
+            if (clickedItem.redirectCategory) {
+                activeCategory = clickedItem.redirectCategory;
 
-      // Redirect logic (your breakfast cards)
-    if (clickedItem && clickedItem.redirectCategory) {
-        activeCategory = clickedItem.redirectCategory;
+                tabBtns.forEach(b => b.classList.remove('active'));
+                document
+                    .querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`)
+                    .classList.add('active');
 
-        mainTabBtns.forEach(b => b.classList.remove('active'));
-        const tabToActivate = document.querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`);
-        if (tabToActivate) tabToActivate.classList.add('active');
+                displayMenuItems(clickedItem.redirectCategory);
 
-        if (activeCategory === 'drinks') {
-        if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
-            setActiveDrinkFilter('all');
-        } else {
-        if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
-        }
+                document.querySelector('.menu-section').scrollIntoView({
+                    behavior: 'smooth'
+                });
 
-        displayMenuItems(clickedItem.redirectCategory);
+                return;
+            }
 
-        document.querySelector('.menu-section')?.scrollIntoView({ behavior: 'smooth' });
-        return;
-}
-
-        openModal(itemId, itemCategory);
+            openModal(itemId, itemCategory);
+        });
     });
-});
 }
-
-function menuCardTemplate(item, category) {
-  const price = item.price ? item.price : "";
-  return `
-    <div class="menu-item" data-id="${item.id}" data-category="${category}">
-      <div class="menu-item-header">
-        <h3 class="menu-item-title">${item.name}</h3>
-        <div class="menu-item-badges">
-          ${item.tags?.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
-          ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
-        </div>
-      </div>
-      ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-      <div class="menu-item-price">${price}</div>
-    </div>
-  `;
-}
-
 
 
 const modal = document.getElementById('menuModal');
