@@ -75,15 +75,43 @@ rice: [
         { id: 52, name: "Veg Sandwich", description: "Roasted bread, fresh veggies, mayo", price: "Rs. 600", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: ["veg"], isVeg: true }
     ],
     drinks: [
-        { id: 53, name: "Milk Coffee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 54, name: "Black Coffee", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 55, name: "Milk Tea", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 56, name: "Black Tea", description: "Pure Ceylon black tea", price: "Rs. 250", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 57, name: "Fresh Juice", description: "Seasonal fresh fruit juice", price: "Rs. 450", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
-        { id: 58, name: "Wild Cocodream", description: "Special coconut-based drink", price: "Rs. 600", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["popular", "veg"], isVeg: true },
-        { id: 59, name: "Go Wild", description: "Signature energy drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
-        { id: 60, name: "Come Wild", description: "Refreshing tropical drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true }
-    ]
+        // HOT DRINKS
+        { id: 53, name: "Black Coffee", description: "Strong black coffee", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "hot" },
+        { id: 54, name: "Milk Coffee", description: "Coffee with milk", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "hot" },
+        { id: 55, name: "Chai Tea", description: "Traditional Sri Lankan chai tea", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 56, name: "Black Tea", description: "Strong black tea", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 57, name: "Milk Tea", description: "Tea with milk and sugar", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 58, name: "Herbal Tea (Samahan)", description:"Traditional herbal tea made from local herbs and spices", price:"", image:"https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags:[], drinkType:"hot"},
+        { id: 59, name: "Green Tea", description: "Fresh green tea", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 60, name: "Honey Lemon Tea", description: "Honey and lemon tea blend", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 61, name: "Hibiscus Tea", description: "Sour hibiscus tea with natural sweetness", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+        { id: 62, name: "Blue Pea Tea", description: "Blue pea flower tea with natural blue color", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], drinkType: "hot" },
+
+        // COOL DRINKS
+        { id: 63, name: "Iced Coffee", description: "Cold brew coffee served over ice", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "cool" },
+        { id: 64, name: "Iced Tea", description: "Chilled tea served over ice", price: "", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800", tags: [], drinkType: "cool" },
+
+        { id: 65, name: "Pineapple", description: "Fresh pineapple juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 66, name: "Mango", description: "Fresh mango juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 67, name: "Passion Fruit", description: "Fresh passion fruit juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 68, name: "Watermelon", description: "Fresh watermelon juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 69, name: "Banana", description: "Fresh banana juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 70, name: "Papaya", description: "Fresh papaya juice", price: "", image:"https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags:["veg"], drinkType:"cool"},
+        { id: 71, name: "Lime", description: "Fresh lime juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 72, name: "Mixed Fruit", description: "Mixed fruit juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType: "cool" },
+        { id: 73, name: "Carrot", description: "Fresh carrot juice", price: "", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], drinkType:"cool"},
+        { id: 74, name:"Banana & Carrot", description:"Banana and carrot juice mix", price:"", image:"https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags:["veg"], drinkType:"cool"},
+        { id: 75, name:"Mango & Carrot" , description:"Mango and carrot juice mix" , price:"", image:"https://images.unsplash.com/photo-1546548970-71785318a17b?w=800" , tags:["veg"] , drinkType:"cool"},
+        { id: 76, name:"SL Lemonade" , description:"Sri Lankan style lemonade with local ingredients" , price:"", image:"https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800" , tags:["veg"] , drinkType:"cool"},
+
+        { id: 77, name: "Coca-Cola", description: "Classic Coca-Cola", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 78, name: "Sprite", description: "Refreshing Sprite", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 79, name: "Ginger Beer", description: "Spicy ginger beer", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 80, name: "Ginger Ale", description: "Mild ginger ale", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 81, name: "Soda", description: "Refreshing soda", price: "", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800", tags: [], drinkType: "cool" },
+        { id: 82, name: "Water (500ml)", description:"Bottled water in 500ml size", price:"", image:"https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=800", tags:[], drinkType:"cool"},
+        { id: 83, name: "Water (1000ml)", description: "Bottled water in 1000ml size", price: "", image: "https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=800", tags: [], drinkType: "cool" },
+],
 };
 
 
@@ -97,110 +125,153 @@ if (hamburger) {
     });
 }
 
-
-const tabBtns = document.querySelectorAll('.tab-btn');
+const mainTabBtns = document.querySelectorAll('.tab-btn[data-category]');
+const drinkFilterWrap = document.getElementById('drinkFilters');
+const drinkBtns = document.querySelectorAll('.drink-btn');
 const menuItemsContainer = document.getElementById('menuItemsFull');
-let activeCategory = 'breakfast';
 
-tabBtns.forEach(btn => {
+let activeCategory = 'breakfast';
+let activeDrinkFilter = 'hot';
+
+// MAIN CATEGORY TAB CLICK
+mainTabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeCategory = btn.getAttribute('data-category');
-        displayMenuItems(activeCategory);
-    });
+    mainTabBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    activeCategory = btn.getAttribute('data-category');
+
+    // Show/hide drink filter row
+    if (activeCategory === 'drinks') {
+    if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+    // reset to ALL whenever entering drinks
+        setActiveDrinkFilter('hot');
+    } else {
+    if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+        activeDrinkFilter = 'hot';
+    }
+
+    displayMenuItems(activeCategory);
 });
+});
+
+// DRINK FILTER CLICK
+drinkBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+    const type = btn.getAttribute('data-drink');
+    setActiveDrinkFilter(type);
+    displayMenuItems('drinks');
+});
+});
+
+function setActiveDrinkFilter(type) {
+    activeDrinkFilter = type;
+    drinkBtns.forEach(b => b.classList.remove('active'));
+    const activeBtn = document.querySelector(`.drink-btn[data-drink="${type}"]`);
+    if (activeBtn) activeBtn.classList.add('active');
+}
 
 
 displayMenuItems(activeCategory);
 
 
 function displayMenuItems(category) {
-    const items = fullMenuData[category] || [];
-    menuItemsContainer.innerHTML = '';
+    if (!menuItemsContainer) return;
 
-    
-    if (category === "kottu") {
+let items = fullMenuData[category] || [];
 
-        const grouped = {};
-        items.forEach(item => {
-            const group = item.group || "Others";
-            if (!grouped[group]) grouped[group] = [];
-            grouped[group].push(item);
-        });
-
-        Object.keys(grouped).forEach(groupName => {
-
-            const groupId = groupName.replace(/\s+/g,'-').toLowerCase();
-
-            menuItemsContainer.innerHTML += `
-                <div class="menu-group-title">${groupName}</div>
-                <div class="menu-group-grid" id="${groupId}"></div>
-            `;
-
-            const grid = document.getElementById(groupId);
-
-            grouped[groupName].forEach(item => {
-                grid.innerHTML += `
-                    <div class="menu-item" data-id="${item.id}" data-category="${category}">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">${item.name}</h3>
-                            <div class="menu-item-badges">
-                                ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
-                                ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
-                            </div>
-                        </div>
-                        ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-                    </div>
-                `;
-            });
-        });
-
-    } else {
-       
-        menuItemsContainer.innerHTML = items.map(item => `
-            <div class="menu-item" data-id="${item.id}" data-category="${category}">
-                <div class="menu-item-header">
-                    <h3 class="menu-item-title">${item.name}</h3>
-                    <div class="menu-item-badges">
-                        ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
-                        ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
-                    </div>
-                </div>
-                ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-            </div>
-        `).join('');
-    }
-
-    
-    document.querySelectorAll('.menu-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const itemId = parseInt(item.getAttribute('data-id'));
-            const itemCategory = item.getAttribute('data-category');
-            const clickedItem = fullMenuData[itemCategory].find(i => i.id === itemId);
-
-            // Redirect logic
-            if (clickedItem.redirectCategory) {
-                activeCategory = clickedItem.redirectCategory;
-
-                tabBtns.forEach(b => b.classList.remove('active'));
-                document
-                    .querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`)
-                    .classList.add('active');
-
-                displayMenuItems(clickedItem.redirectCategory);
-
-                document.querySelector('.menu-section').scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                return;
-            }
-
-            openModal(itemId, itemCategory);
-        });
-    });
+  // Apply drink filter only for drinks
+    if (category === 'drinks' && activeDrinkFilter !== 'all') {
+    items = items.filter(i => i.drinkType === activeDrinkFilter);
 }
+
+  // Empty
+    if (items.length === 0) {
+    menuItemsContainer.innerHTML =
+    '<p style="text-align:center; color: var(--text-gray);">No items available in this category.</p>';
+    return;
+}
+
+menuItemsContainer.innerHTML = '';
+
+// Special grouping for kottu (your existing logic)
+if (category === "kottu") {
+    const grouped = {};
+    items.forEach(item => {
+        const group = item.group || "Others";
+        if (!grouped[group]) grouped[group] = [];
+        grouped[group].push(item);
+});
+
+    Object.keys(grouped).forEach(groupName => {
+        const groupId = groupName.replace(/\s+/g, "-").toLowerCase();
+
+    menuItemsContainer.innerHTML += `
+        <div class="menu-group-title">${groupName}</div>
+        <div class="menu-group-grid" id="${groupId}"></div>
+`;
+
+    const grid = document.getElementById(groupId);
+
+        grouped[groupName].forEach(item => {
+        grid.innerHTML += menuCardTemplate(item, category);
+});
+});
+} else {
+    // Normal grid (same format)
+    menuItemsContainer.innerHTML = items.map(item => menuCardTemplate(item, category)).join('');
+}
+
+  // Click handlers
+    document.querySelectorAll('.menu-item').forEach(card => {
+    card.addEventListener('click', () => {
+        const itemId = parseInt(card.getAttribute('data-id'));
+        const itemCategory = card.getAttribute('data-category');
+        const clickedItem = (fullMenuData[itemCategory] || []).find(i => i.id === itemId);
+
+      // Redirect logic (your breakfast cards)
+    if (clickedItem && clickedItem.redirectCategory) {
+        activeCategory = clickedItem.redirectCategory;
+
+        mainTabBtns.forEach(b => b.classList.remove('active'));
+        const tabToActivate = document.querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`);
+        if (tabToActivate) tabToActivate.classList.add('active');
+
+        if (activeCategory === 'drinks') {
+        if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+            setActiveDrinkFilter('all');
+        } else {
+        if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+        }
+
+        displayMenuItems(clickedItem.redirectCategory);
+
+        document.querySelector('.menu-section')?.scrollIntoView({ behavior: 'smooth' });
+        return;
+}
+
+        openModal(itemId, itemCategory);
+    });
+});
+}
+
+function menuCardTemplate(item, category) {
+  const price = item.price ? item.price : "";
+  return `
+    <div class="menu-item" data-id="${item.id}" data-category="${category}">
+      <div class="menu-item-header">
+        <h3 class="menu-item-title">${item.name}</h3>
+        <div class="menu-item-badges">
+          ${item.tags?.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
+          ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
+        </div>
+      </div>
+      ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
+      <div class="menu-item-price">${price}</div>
+    </div>
+  `;
+}
+
 
 
 const modal = document.getElementById('menuModal');
