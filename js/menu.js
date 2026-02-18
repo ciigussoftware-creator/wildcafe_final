@@ -30,16 +30,15 @@ const fullMenuData = {
         { id: 109, name: "Go Wild Cheese Veg Kottu", group: "Go Wild Cheese", description: "Cheesy vegetarian kottu", tags: [], isVeg: true }
     ],
     hoppers: [
-        { id: 9, name: "All You Can Eat Hoppers Special", description: "Unlimited hoppers - traditional Sri Lankan comfort food", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
-        { id: 10, name: "Plain Hopper", description: "Rice flour, coconut milk, salt", price: "Rs. 150", image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: ["veg"], isVeg: true },
-        { id: 11, name: "Egg Hopper", description: "Classic hopper with egg", price: "Rs. 350", image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: [], isVeg: false },
-        { id: 12, name: "Egg & Chicken Hopper", description: "Hopper with egg and chicken", price: "Rs. 550", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
-        { id: 13, name: "Egg & Cheese Hopper", description: "Hopper with egg and melted cheese", price: "Rs. 450", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
-        { id: 14, name: "Egg, Chicken & Cheese Hopper", description: "Ultimate hopper with egg, chicken and cheese", price: "Rs. 650", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
-        { id: 15, name: "English Breakfast Hopper", description: "Hopper with bacon, sausage and egg", price: "Rs. 800", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: [], isVeg: false },
-        { id: 16, name: "Bacon & Sausage Hopper", description: "With egg hopper", price: "Rs. 750", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: [], isVeg: false },
-        { id: 17, name: "Fruit Hopper", description: "Sweet hopper with fresh fruits", price: "Rs. 600", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true },
-        { id: 18, name: "Chocolate & Banana Hopper", description: "Sweet hopper with chocolate and banana", price: "Rs. 450", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true }
+        { id: 9, name: "All You Can Eat Hoppers Special", description: "Unlimited hoppers - traditional Sri Lankan comfort food", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
+        { id: 10, name: "Plain Hopper", description: "Rice flour, coconut milk, salt",  image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: ["veg"], isVeg: true },
+        { id: 11, name: "Egg Hopper", description: "Classic hopper with egg", image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: [], isVeg: false },
+        { id: 12, name: "Egg & Chicken Hopper", description: "Hopper with egg and chicken", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
+        { id: 13, name: "Egg & Cheese Hopper", description: "Hopper with egg and melted cheese",  image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
+        { id: 14, name: "Egg, Chicken & Cheese Hopper", description: "Ultimate hopper with egg, chicken and cheese", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
+        { id: 15, name: "Egg, Bacon & Sausage Hopper", description: "Hopper with bacon, sausage and egg",  image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: [], isVeg: false },
+        { id: 17, name: "Mixed Fruit Hopper", description: "Sweet hopper with fresh fruits", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true },
+        { id: 18, name: "Chocolate & Banana Hopper", description: "Sweet hopper with chocolate and banana", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true }
     ],
     rice: [
         { id: 401, name: "All You Can Eat Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
@@ -71,13 +70,17 @@ const fullMenuData = {
         { id: 46, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
     ],
     burgers: [
-        { id: 47, name: "Chicken Burger", description: "Coconut roti bun, grilled chicken, veggies, mayo, ketchup - fries on the side", price: "Rs. 900", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 48, name: "Egg Burger", description: "Coconut roti bun, eggs, veggies, mayo, ketchup - fries on the side", price: "Rs. 750", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
-        { id: 49, name: "Veg Burger", description: "Coconut roti bun, fresh veggies, mayo, ketchup - fries on the side", price: "Rs. 650", image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800", tags: ["veg"], isVeg: true },
-        { id: 50, name: "Chicken Sandwich", description: "Roasted bread, grilled chicken, veggies, mayo", price: "Rs. 850", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
-        { id: 51, name: "Egg Sandwich", description: "Roasted bread, eggs, veggies, mayo", price: "Rs. 700", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: [], isVeg: false },
-        { id: 52, name: "Veg Sandwich", description: "Roasted bread, fresh veggies, mayo", price: "Rs. 600", image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800", tags: ["veg"], isVeg: true }
+        { id: 747, name: "Egg Burger(SL Omlette)", description: "fries on the side",modalDescription: "Coconut roti burger with SL styled omlette and fries on the side. Request to add more cheese",image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 748, name: "Veg Burger", description: "fries on the side",modalDescription: "full vegetarian Coconut roti burger with fries on the side. Request to add more cheese ", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: true },
+        { id: 749, name: "Chicken Burger", description: "fries on the side",modalDescription: " Coconut roti burger with chicken patty and fries on the side. Request to add more cheese", image: "images/menu/coconut_roti_burger/coconut_roti_burger_chicken.png", tags: ["veg"], isVeg: false }
     ],
+    sandwich: [
+        { id: 750, name: "Cheese Melt Sandwich", description: "fries on the side ", modalDescription: "Toasted bread with cheese and vegetables",  image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: ["veg"], isVeg: true },
+        { id: 751, name: "Egg Sandwich", description: "fries on the side", modalDescription: "Egg Sandwich with fries on the side", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 752, name: "Chicken Sandwich", description: "fries on the side", modalDescription: "Toasted bread with chicken and fries", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
+        { id: 753, name: "Veg Sandwich", description: "fries on the side", modalDescription: "Toasted bread with vegetables and fries", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: ["veg"], isVeg: true },
+    ],
+    
     drinks: [
         // HOT DRINKS
         { id: 53, name: "Black Coffee", description: "Strong black coffee", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], drinkType: "hot" },
