@@ -34,16 +34,16 @@ const fullMenuData = {
         { id: 27, name: "Cheese & Veg Kottu", description: "Vegetarian kottu with melted cheese", price: "Rs. 850", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true }
     ],
     rice: [
-        { id: 28, name: "All You Can Eat Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
-        { id: 29, name: "Chicken Rice & Curry from sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
-        { id: 30, name: "Egg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
-        { id: 31, name: "Veg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=800", tags: ["veg"], isVeg: true },
+        { id: 401, name: "All You Can Eat Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
+        { id: 402, name: "Chicken Rice & Curry from sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
+        { id: 403, name: "Egg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+        { id: 404, name: "Veg Rice & Curry from Sigiriya", description: "", price: "", image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=800", tags: ["veg"], isVeg: true },
        
     ],
      milkrice: [
-        { id: 28, name: "Milk Rice with Onion Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
-        { id: 29, name: "Milk Rice with Chicken Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
-        { id: 30, name: "Milk Rice with Sweet Coconut and Honey (14 oz)", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+        { id: 405, name: "Milk Rice with Onion Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
+        { id: 406, name: "Milk Rice with Chicken Curry ", description: "", price: "", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
+        { id: 407, name: "Milk Rice with Sweet Coconut and Honey (14 oz)", description: "", price: "", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
        
     ],
     roti: [
