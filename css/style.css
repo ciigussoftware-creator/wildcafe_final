@@ -350,7 +350,7 @@ body {
     border-radius: 12px;
     padding: 25px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s;  
 }
 
 .menu-item:hover {
