@@ -6,12 +6,12 @@ const fullMenuData = {
         { id: 110,name: "Hoppers",description: "",image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800",tags: ["popular"],isVeg: false,redirectCategory: "hoppers"},
         { id: 1,name: "Hoppers",description: "",image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800",tags: [""],isVeg: false,redirectCategory: "kottu"},
         { id: 2, name: "Milk Rice", description: "", image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800", tags: [], isVeg: false ,redirectCategory: ""},
-        { id: 3, name: "SL Omelette", description: "4 eggs, bacon, sausage, 2 slices of bread", price: "Rs. 850", image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800", tags: [], isVeg: false },
-        { id: 4, name: "Cheese Omelette", description: "4 eggs, veggies and cheese, 2 slices of bread", price: "Rs. 750", image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800", tags: ["veg"], isVeg: true },
-        { id: 5, name: "Breakfast Kottu Omelette", description: "4 eggs, veggies, 2 slices of bread", price: "Rs. 700", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
-        { id: 6, name: "Breakfast Burger", description: "Coconut roti bun, egg, bacon, sausage & cheese", price: "Rs. 950", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: [], isVeg: false },
-        { id: 7, name: "Chocolate & Banana Pancake", description: "Fresh chocolate and banana with maple syrup", price: "Rs. 750", image: "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800", tags: ["veg"], isVeg: true },
-        { id: 8, name: "Mango & Honey Pancake", description: "Fresh mango and honey", price: "Rs. 750", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true }
+        { id: 3, name: "SL Omelette", description: "4 eggs, bacon, sausage, 2 slices of bread", price: "", image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800", tags: [], isVeg: false },
+        { id: 4, name: "Cheese Omelette", description: "4 eggs, veggies and cheese, 2 slices of bread", price: "", image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800", tags: ["veg"], isVeg: true },
+        { id: 5, name: "Breakfast Kottu Omelette", description: "4 eggs, veggies, 2 slices of bread", price: "", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 6, name: "Breakfast Burger", description: "Coconut roti bun, egg, bacon, sausage & cheese", price: "", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: [], isVeg: false },
+        { id: 7, name: "Chocolate & Banana Pancake", description: "Fresh chocolate and banana with maple syrup", price: "", image: "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800", tags: ["veg"], isVeg: true },
+        { id: 8, name: "Mango & Honey Pancake", description: "Fresh mango and honey", price: "", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true }
     ],
     kottu: [
         // ===== Jungle Kottu =====
@@ -54,20 +54,20 @@ const fullMenuData = {
        
     ],
     roti: [
-        { id: 35, name: "Coconut Roti with dhal curry & coconut sambal", description: "",modalDescription: "Flour, fresh coconut, saltchoice of protein  Egg or chicken", price: "Rs. 800", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: [], isVeg: false },
-        { id: 36, name: "Coconut Roti with chicken curry ", description: "", modalDescription: "Traditional coconut roti with dhal curry", price: "Rs. 600", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 37, name: "Chocolate Roti", description: "", modalDescription: "Sweet roti with chocolate", price: "Rs. 550", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 38, name: "Chocolate & Banana Roti", description: "", modalDescription: "Sweet roti with chocolate and banana", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 39, name: "Chocolate & Honey Roti", description: "", modalDescription: "Sweet roti with chocolate and banana", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 40, name: "Mango & Honey Roti", description: "", modalDescription: "Sweet roti with mango and honey", price: "Rs. 650", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
-        { id: 41, name: "Coconut & Honey Roti", description: "", modalDescription: "Sweet roti with coconut and honey", price: "Rs. 600", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true }
+        { id: 35, name: "Coconut Roti with dhal curry & coconut sambal", description: "",modalDescription: "Flour, fresh coconut, saltchoice of protein  Egg or chicken", price: "", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: [], isVeg: false },
+        { id: 36, name: "Coconut Roti with chicken curry ", description: "", modalDescription: "Traditional coconut roti with dhal curry", price: "", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 37, name: "Chocolate Roti", description: "", modalDescription: "Sweet roti with chocolate", price: "", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 38, name: "Chocolate & Banana Roti", description: "", modalDescription: "Sweet roti with chocolate and banana", price: "", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 39, name: "Chocolate & Honey Roti", description: "", modalDescription: "Sweet roti with chocolate and banana", price: "", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800", tags: ["veg"], isVeg: true },
+        { id: 40, name: "Mango & Honey Roti", description: "", modalDescription: "Sweet roti with mango and honey", price:"", image:"https://images.unsplash.com/photo-1622244222444-2c3c3c3c3c3c?w=8" , tags:["veg"], isVeg:true},
+        { id : 41, name : "Coconut & Honey Roti" , description : "" , modalDescription : "Sweet roti with coconut and honey" , price : "" , image : "https://images.unsplash.com/photo-1622244222444-2c3c3c3c3c3c?w=8" , tags : ["veg"] , isVeg : true }
     ],
     pasta: [
-        { id: 42, name: "All You Can Eat Pasta", description: "Unlimited pasta buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["popular"], isVeg: false },
-        { id: 43, name: "Chicken Curry Pasta", description: "Pasta with chicken curry, vegetables, coconut milk", price: "Rs. 1,100", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
-        { id: 44, name: "Egg Curry Pasta", description: "Pasta with egg curry and vegetables", price: "Rs. 900", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
-        { id: 45, name: "Kiri Hodi Pasta", description: "Pasta with traditional kiri hodi (coconut gravy)", price: "Rs. 850", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["veg"], isVeg: true },
-        { id: 46, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
+        { id: 42, name: "All You Can Eat Pasta", description: "Unlimited pasta buffet", price: "", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["popular"], isVeg: false },
+        { id: 43, name: "Chicken Curry Pasta", description: "Pasta with chicken curry, vegetables, coconut milk", price: "", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
+        { id: 44, name: "Egg Curry Pasta", description: "Pasta with egg curry and vegetables", price: "", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: [], isVeg: false },
+        { id: 45, name: "Kiri Hodi Pasta", description: "Pasta with traditional kiri hodi (coconut gravy)", price: "", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800", tags: ["veg"], isVeg: true },
+        { id: 46, name: "English Pasta", description: "Bacon, sausage, egg, fresh milk, garlic & cheese", price: "", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800", tags: [], isVeg: false }
     ],
     burgers: [
         { id: 747, name: "Egg Burger(SL Omlette)", description: "fries on the side",modalDescription: "Coconut roti burger with SL styled omlette and fries on the side. Request to add more cheese",image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", tags: [], isVeg: false },
@@ -133,23 +133,23 @@ const fullMenuData = {
         { id: 608, name: "Wild House Chicken Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false }
     ],
     smoothie: [
-        { id: 901, name: "Wild CocoDream", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 902, name: "Go Wild", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 903, name: "Come Wild", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
+        { id: 901, name: "Wild CocoDream", description: "Rich Sri Lankan coffee with creamy milk", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 902, name: "Go Wild", description: "Pure Ceylon coffee", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 903, name: "Come Wild", description: "Traditional Sri Lankan tea with milk", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
     ],
     desserts: [
-        { id: 904, name: "Creme Brulee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 905, name: "Chocolate & Banana Hoppers", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 906, name: "Fruits Hoppers", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 907, name: "Fruit Salad", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 908, name: "Caramel Pudding", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 909, name: "Sweet Coconut Honey Pancake", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 910, name: "Sweet Coconut Honey Milk Rice (70z)", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 911, name: "Chocolate Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 912, name: "Chocolate & Banana Roti", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
-        { id: 913, name: "Mango & Honey Roti", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 914, name: "Sweet Coconut Honey Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
-        { id: 915, name: "Pudding", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
+        { id: 904, name: "Creme Brulee", description: "Rich Sri Lankan coffee with creamy milk", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 905, name: "Chocolate & Banana Hoppers", description: "Pure Ceylon coffee", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 906, name: "Fruits Hoppers", description: "Traditional Sri Lankan tea with milk", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 907, name: "Fruit Salad", description: "Rich Sri Lankan coffee with creamy milk", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 908, name: "Caramel Pudding", description: "Pure Ceylon coffee", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 909, name: "Sweet Coconut Honey Pancake", description: "Traditional Sri Lankan tea with milk", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 910, name: "Sweet Coconut Honey Milk Rice (70z)", description: "Rich Sri Lankan coffee with creamy milk", price: "", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 911, name: "Chocolate Roti", description: "Pure Ceylon coffee", price:"", image:"https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800" , tags:[], isVeg:true},
+        { id :  912, name :  "Chocolate & Banana Roti" , description :  "Traditional Sri Lankan tea with milk" , price : "" , image :  "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800" , tags : [] , isVeg : true },
+        { id :  913, name :  "Mango & Honey Roti" , description :  "Rich Sri Lankan coffee with creamy milk" , price : "" , image :  "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800" , tags : [] , isVeg : true },
+        { id :  914, name :  "Sweet Coconut Honey Roti" , description :  "Pure Ceylon coffee" , price : "" , image :  "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800" , tags : [] , isVeg : true },
+        { id: 915, name: "Pudding", description: "Traditional Sri Lankan tea with milk", price: "", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
     ]
 
 };
@@ -165,109 +165,157 @@ if (hamburger) {
     });
 }
 
-
-const tabBtns = document.querySelectorAll('.tab-btn');
+// =======================================
+// Tabs + Drink Filters
+// =======================================
+const mainTabBtns = document.querySelectorAll('.tab-btn[data-category]');
+const drinkFilterWrap = document.getElementById('drinkFilters');
+const drinkBtns = document.querySelectorAll('.drink-btn');
 const menuItemsContainer = document.getElementById('menuItemsFull');
-let activeCategory = 'breakfast';
 
-tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeCategory = btn.getAttribute('data-category');
-        displayMenuItems(activeCategory);
-    });
+let activeCategory = 'breakfast';
+let activeDrinkFilter = 'all';
+
+
+// MAIN CATEGORY TAB CLICK
+mainTabBtns.forEach(btn => {
+btn.addEventListener('click', () => {
+    mainTabBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    activeCategory = btn.getAttribute('data-category');
+
+    // Show/hide drink filter row
+    if (activeCategory === 'drinks') {
+    if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+      // reset to ALL whenever entering drinks
+        setActiveDrinkFilter('hot');
+    } else {
+    if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+        activeDrinkFilter = 'all';
+    }
+
+    displayMenuItems(activeCategory);
 });
+});
+
+// DRINK FILTER CLICK
+drinkBtns.forEach(btn => {
+btn.addEventListener('click', () => {
+    const type = btn.getAttribute('data-drink');
+    setActiveDrinkFilter(type);
+    displayMenuItems('drinks');
+});
+});
+
+function setActiveDrinkFilter(type) {
+    activeDrinkFilter = type;
+    drinkBtns.forEach(b => b.classList.remove('active'));
+    const activeBtn = document.querySelector(`.drink-btn[data-drink="${type}"]`);
+if (activeBtn) activeBtn.classList.add('active');
+}
 
 
 displayMenuItems(activeCategory);
 
-
+// =======================================
+// Render Items (keeps same card format)
+// =======================================
 function displayMenuItems(category) {
-    const items = fullMenuData[category] || [];
-    menuItemsContainer.innerHTML = '';
+  if (!menuItemsContainer) return;
 
-    
-    if (category === "kottu") {
+  let items = fullMenuData[category] || [];
 
-        const grouped = {};
-        items.forEach(item => {
-            const group = item.group || "Others";
-            if (!grouped[group]) grouped[group] = [];
-            grouped[group].push(item);
-        });
+  // Apply drink filter only for drinks
+  if (category === 'drinks' && activeDrinkFilter !== 'all') {
+    items = items.filter(i => i.drinkType === activeDrinkFilter);
+  }
 
-        Object.keys(grouped).forEach(groupName => {
+  // Empty
+  if (items.length === 0) {
+    menuItemsContainer.innerHTML =
+      '<p style="text-align:center; color: var(--text-gray);">No items available in this category.</p>';
+    return;
+  }
 
-            const groupId = groupName.replace(/\s+/g,'-').toLowerCase();
+  menuItemsContainer.innerHTML = '';
 
-            menuItemsContainer.innerHTML += `
-                <div class="menu-group-title">${groupName}</div>
-                <div class="menu-group-grid" id="${groupId}"></div>
-            `;
-
-            const grid = document.getElementById(groupId);
-
-            grouped[groupName].forEach(item => {
-                grid.innerHTML += `
-                    <div class="menu-item" data-id="${item.id}" data-category="${category}">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">${item.name}</h3>
-                            <div class="menu-item-badges">
-                                ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
-                                ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
-                            </div>
-                        </div>
-                        ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-                    </div>
-                `;
-            });
-        });
-
-    } else {
-       
-        menuItemsContainer.innerHTML = items.map(item => `
-            <div class="menu-item" data-id="${item.id}" data-category="${category}">
-                <div class="menu-item-header">
-                    <h3 class="menu-item-title">${item.name}</h3>
-                    <div class="menu-item-badges">
-                        ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
-                        ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
-                    </div>
-                </div>
-                ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-            </div>
-        `).join('');
-    }
-
-    
-    document.querySelectorAll('.menu-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const itemId = parseInt(item.getAttribute('data-id'));
-            const itemCategory = item.getAttribute('data-category');
-            const clickedItem = fullMenuData[itemCategory].find(i => i.id === itemId);
-
-            // Redirect logic
-            if (clickedItem.redirectCategory) {
-                activeCategory = clickedItem.redirectCategory;
-
-                tabBtns.forEach(b => b.classList.remove('active'));
-                document
-                    .querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`)
-                    .classList.add('active');
-
-                displayMenuItems(clickedItem.redirectCategory);
-
-                document.querySelector('.menu-section').scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                return;
-            }
-
-            openModal(itemId, itemCategory);
-        });
+  // Special grouping for kottu (your existing logic)
+  if (category === "kottu") {
+    const grouped = {};
+    items.forEach(item => {
+      const group = item.group || "Others";
+      if (!grouped[group]) grouped[group] = [];
+      grouped[group].push(item);
     });
+
+    Object.keys(grouped).forEach(groupName => {
+      const groupId = groupName.replace(/\s+/g, "-").toLowerCase();
+
+      menuItemsContainer.innerHTML += `
+        <div class="menu-group-title">${groupName}</div>
+        <div class="menu-group-grid" id="${groupId}"></div>
+      `;
+
+      const grid = document.getElementById(groupId);
+
+      grouped[groupName].forEach(item => {
+        grid.innerHTML += menuCardTemplate(item, category);
+      });
+    });
+  } else {
+    // Normal grid (same format)
+    menuItemsContainer.innerHTML = items.map(item => menuCardTemplate(item, category)).join('');
+  }
+
+  // Click handlers
+  document.querySelectorAll('.menu-item').forEach(card => {
+    card.addEventListener('click', () => {
+      const itemId = parseInt(card.getAttribute('data-id'));
+      const itemCategory = card.getAttribute('data-category');
+      const clickedItem = (fullMenuData[itemCategory] || []).find(i => i.id === itemId);
+
+      // Redirect logic (your breakfast cards)
+      if (clickedItem && clickedItem.redirectCategory) {
+        activeCategory = clickedItem.redirectCategory;
+
+        mainTabBtns.forEach(b => b.classList.remove('active'));
+        const tabToActivate = document.querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`);
+        if (tabToActivate) tabToActivate.classList.add('active');
+
+        if (activeCategory === 'drinks') {
+          if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+          setActiveDrinkFilter('all');
+        } else {
+          if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+        }
+
+        displayMenuItems(clickedItem.redirectCategory);
+
+        document.querySelector('.menu-section')?.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+
+      openModal(itemId, itemCategory);
+    });
+  });
+}
+
+function menuCardTemplate(item, category) {
+    const price = item.price ? item.price : "";
+  return `
+    <div class="menu-item" data-id="${item.id}" data-category="${category}">
+        <div class="menu-item-header">
+        <h3 class="menu-item-title">${item.name}</h3>
+        <div class="menu-item-badges">
+          ${item.tags?.includes("popular") ? '<span class="badge popular">Popular</span>' : ""}
+          ${item.isVeg ? '<span class="badge veg">Veg</span>' : ""}
+        </div>
+      </div>
+      ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
+      <div class="menu-item-price">${price}</div>
+    </div>
+  `;
 }
 
 
