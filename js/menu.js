@@ -112,6 +112,19 @@ rice: [
         { id: 82, name: "Water (500ml)", description:"Bottled water in 500ml size", price:"", image:"https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=800", tags:[], drinkType:"cool"},
         { id: 83, name: "Water (1000ml)", description: "Bottled water in 1000ml size", price: "", image: "https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=800", tags: [], drinkType: "cool" },
 ],
+  
+    pancake: [
+        { id: 601, name: "Pancake with honey", description: "Rice flour, coconut, palm honey", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 602, name: "Sweet Coconut Honey Pancake", description: "Rice flour, coconut, palm honey", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 603, name: "Chocolate Pancake", description: "Rice flour, coconut, chocolate", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 604, name: "Chocolate & Banana Pancake", description: "Rice flour, coconut, chocolate, banana", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
+        { id: 605, name: "Mango & Honey Pancake", description: "Rice flour, coconut, mango, honey", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true }
+    ],
+    friedrice: [
+        { id: 606, name: "Wild House Veg Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true },
+        { id: 607, name: "Wild House Egg Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
+        { id: 608, name: "Wild House Chicken Fried Rice", description: "Rice, veggies, garlic, ginger, soya sauce, butter, choice of protein Egg or chicken", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false }
+    ]
 };
 
 
