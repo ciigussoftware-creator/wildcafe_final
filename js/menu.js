@@ -1,14 +1,33 @@
+// =======================================
 // Complete Menu Data
+// =======================================
 const fullMenuData = {
     breakfast: [
-        { id: 1, name: "English Breakfast Hopper Special", description: "Plain Hopper, sausage & bacon with egg hopper, Fruit Hopper, tea/coffee or juice", price: "Rs. 1,450", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: ["popular"], isVeg: false },
-        { id: 2, name: "English Breakfast Sandwich", description: "Roasted bread, egg, bacon, sausage with fries on the side", price: "Rs. 1,200", image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800", tags: [], isVeg: false },
+        { id: 110,name: "Hoppers",description: "",image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800",tags: ["popular"],isVeg: false,redirectCategory: "hoppers"},
+        { id: 1,name: "Hoppers",description: "",image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800",tags: [""],isVeg: false,redirectCategory: "kottu"},
+        { id: 2, name: "Milk Rice", description: "", image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800", tags: [], isVeg: false ,redirectCategory: ""},
         { id: 3, name: "SL Omelette", description: "4 eggs, bacon, sausage, 2 slices of bread", price: "Rs. 850", image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800", tags: [], isVeg: false },
         { id: 4, name: "Cheese Omelette", description: "4 eggs, veggies and cheese, 2 slices of bread", price: "Rs. 750", image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800", tags: ["veg"], isVeg: true },
         { id: 5, name: "Breakfast Kottu Omelette", description: "4 eggs, veggies, 2 slices of bread", price: "Rs. 700", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true },
         { id: 6, name: "Breakfast Burger", description: "Coconut roti bun, egg, bacon, sausage & cheese", price: "Rs. 950", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: [], isVeg: false },
         { id: 7, name: "Chocolate & Banana Pancake", description: "Fresh chocolate and banana with maple syrup", price: "Rs. 750", image: "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800", tags: ["veg"], isVeg: true },
         { id: 8, name: "Mango & Honey Pancake", description: "Fresh mango and honey", price: "Rs. 750", image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800", tags: ["veg"], isVeg: true }
+    ],
+    kottu: [
+        // ===== Jungle Kottu =====
+        { id: 101, name: "Jungle Chicken Kottu", group: "Jungle Kottu", description: "Roti, oil, garlic, ginger, soya sauce, onion, veggies, and chicken", tags: ["popular"], isVeg: false },
+        { id: 102, name: "Jungle Egg Kottu", group: "Jungle Kottu", description: "Classic kottu with eggs and vegetables", tags: [], isVeg: false },
+        { id: 103, name: "Jungle Veg Kottu", group: "Jungle Kottu", description: "Vegetarian kottu packed with fresh vegetables", tags: [], isVeg: true },
+
+        // ===== Thai Kottu =====
+        { id: 104, name: "Thai Chicken Kottu", group: "Thai Kottu", description: "Thai-inspired kottu with chicken", tags: [], isVeg: false },
+        { id: 105, name: "Thai Egg Kottu", group: "Thai Kottu", description: "Thai-style kottu with eggs", tags: [], isVeg: false },
+        { id: 106, name: "Thai Veg Kottu", group: "Thai Kottu", description: "Thai-style vegetarian kottu", tags: [], isVeg: true },
+
+        // ===== Go Wild Cheese =====
+        { id: 107, name: "Go Wild Cheese Chicken Kottu", group: "Go Wild Cheese", description: "Signature kottu loaded with cheese and chicken", tags: ["popular"], isVeg: false },
+        { id: 108, name: "Go Wild Cheese Egg Kottu", group: "Go Wild Cheese", description: "Cheese-loaded egg kottu", tags: [], isVeg: false },
+        { id: 109, name: "Go Wild Cheese Veg Kottu", group: "Go Wild Cheese", description: "Cheesy vegetarian kottu", tags: [], isVeg: true }
     ],
     hoppers: [
         { id: 9, name: "All You Can Eat Hoppers Special", description: "Unlimited hoppers - traditional Sri Lankan comfort food", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
@@ -22,18 +41,7 @@ const fullMenuData = {
         { id: 17, name: "Fruit Hopper", description: "Sweet hopper with fresh fruits", price: "Rs. 600", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true },
         { id: 18, name: "Chocolate & Banana Hopper", description: "Sweet hopper with chocolate and banana", price: "Rs. 450", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true }
     ],
-    kottu: [
-        { id: 19, name: "Jungle Chicken Kottu", description: "Roti, oil, garlic, ginger, soya sauce, onion, veggies, and chicken", price: "Rs. 950", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
-        { id: 20, name: "Jungle Egg Kottu", description: "Classic kottu with eggs and vegetables", price: "Rs. 750", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
-        { id: 21, name: "Jungle Veg Kottu", description: "Vegetarian kottu packed with fresh vegetables", price: "Rs. 650", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true },
-        { id: 22, name: "Thai Chicken Kottu", description: "Thai-inspired kottu with chicken", price: "Rs. 1,050", image: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=800", tags: [], isVeg: false },
-        { id: 23, name: "Thai Egg Kottu", description: "Thai-style kottu with eggs", price: "Rs. 850", image: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=800", tags: [], isVeg: false },
-        { id: 24, name: "Thai Veg Kottu", description: "Thai-style vegetarian kottu", price: "Rs. 750", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true },
-        { id: 25, name: "Go Wild Cheese Chicken Kottu", description: "Signature kottu loaded with cheese and chicken", price: "Rs. 1,150", image: "https://images.unsplash.com/photo-1603894584373-5ac82b2fb6c3?w=800", tags: ["popular"], isVeg: false },
-        { id: 26, name: "Cheese & Egg Kottu", description: "Kottu with cheese and eggs", price: "Rs. 950", image: "https://images.unsplash.com/photo-1603894584373-5ac82b2fb6c3?w=800", tags: [], isVeg: false },
-        { id: 27, name: "Cheese & Veg Kottu", description: "Vegetarian kottu with melted cheese", price: "Rs. 850", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: ["veg"], isVeg: true }
-    ],
-    rice: [
+rice: [
         { id: 28, name: "All You Can Eat Rice & Curry", description: "Unlimited rice and curry buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
         { id: 29, name: "Chicken Rice & Curry", description: "Authentic Sri Lankan rice and curry with chicken", price: "Rs. 950", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: [], isVeg: false },
         { id: 30, name: "Egg Rice & Curry", description: "Traditional rice and curry with egg", price: "Rs. 750", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800", tags: [], isVeg: false },
@@ -82,7 +90,7 @@ const fullMenuData = {
     ]
 };
 
-// Mobile Navigation Toggle
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
@@ -93,94 +101,135 @@ if (hamburger) {
     });
 }
 
-// Close mobile menu when clicking on a link
-if (navMenu) {
-    const navLinks = navMenu.querySelectorAll('a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-        });
-    });
-}
 
-// Menu Tab Functionality
 const tabBtns = document.querySelectorAll('.tab-btn');
 const menuItemsContainer = document.getElementById('menuItemsFull');
+let activeCategory = 'breakfast';
 
-if (tabBtns.length > 0 && menuItemsContainer) {
-    let activeCategory = 'breakfast';
-    
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            tabBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            activeCategory = btn.getAttribute('data-category');
-            displayMenuItems(activeCategory);
-        });
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.getAttribute('data-category');
+        displayMenuItems(activeCategory);
     });
-    
-    displayMenuItems(activeCategory);
-}
+});
+
+
+displayMenuItems(activeCategory);
+
 
 function displayMenuItems(category) {
-    if (!menuItemsContainer) return;
-    
     const items = fullMenuData[category] || [];
+    menuItemsContainer.innerHTML = '';
+
     
-    if (items.length === 0) {
-        menuItemsContainer.innerHTML = '<p style="text-align: center; color: var(--text-gray);">No items available in this category.</p>';
-        return;
-    }
-    
-    menuItemsContainer.innerHTML = items.map(item => `
-        <div class="menu-item" data-id="${item.id}" data-category="${category}">
-            <div class="menu-item-header">
-                <h3 class="menu-item-title">${item.name}</h3>
-                <div class="menu-item-badges">
-                    ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
-                    ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
+    if (category === "kottu") {
+
+        const grouped = {};
+        items.forEach(item => {
+            const group = item.group || "Others";
+            if (!grouped[group]) grouped[group] = [];
+            grouped[group].push(item);
+        });
+
+        Object.keys(grouped).forEach(groupName => {
+
+            const groupId = groupName.replace(/\s+/g,'-').toLowerCase();
+
+            menuItemsContainer.innerHTML += `
+                <div class="menu-group-title">${groupName}</div>
+                <div class="menu-group-grid" id="${groupId}"></div>
+            `;
+
+            const grid = document.getElementById(groupId);
+
+            grouped[groupName].forEach(item => {
+                grid.innerHTML += `
+                    <div class="menu-item" data-id="${item.id}" data-category="${category}">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">${item.name}</h3>
+                            <div class="menu-item-badges">
+                                ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
+                                ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
+                            </div>
+                        </div>
+                        ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
+                    </div>
+                `;
+            });
+        });
+
+    } else {
+       
+        menuItemsContainer.innerHTML = items.map(item => `
+            <div class="menu-item" data-id="${item.id}" data-category="${category}">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">${item.name}</h3>
+                    <div class="menu-item-badges">
+                        ${item.tags.includes('popular') ? '<span class="badge popular">Popular</span>' : ''}
+                        ${item.isVeg ? '<span class="badge veg">Veg</span>' : ''}
+                    </div>
                 </div>
+                ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
             </div>
-            ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-        </div>
-    `).join('');
+        `).join('');
+    }
+
     
-    // Add click event listeners to menu items
-    const menuItemElements = document.querySelectorAll('.menu-item');
-    menuItemElements.forEach(item => {
+    document.querySelectorAll('.menu-item').forEach(item => {
         item.addEventListener('click', () => {
             const itemId = parseInt(item.getAttribute('data-id'));
             const itemCategory = item.getAttribute('data-category');
+            const clickedItem = fullMenuData[itemCategory].find(i => i.id === itemId);
+
+            // Redirect logic
+            if (clickedItem.redirectCategory) {
+                activeCategory = clickedItem.redirectCategory;
+
+                tabBtns.forEach(b => b.classList.remove('active'));
+                document
+                    .querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`)
+                    .classList.add('active');
+
+                displayMenuItems(clickedItem.redirectCategory);
+
+                document.querySelector('.menu-section').scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                return;
+            }
+
             openModal(itemId, itemCategory);
         });
     });
 }
 
-// Modal Functionality
+
 const modal = document.getElementById('menuModal');
 const closeBtn = document.getElementById('closeModal');
 
 function openModal(itemId, category) {
     const item = fullMenuData[category].find(i => i.id === itemId);
-    if (!item || !modal) return;
-    
+    if (!item) return;
+
     document.getElementById('modalTitle').textContent = item.name;
-    document.getElementById('modalDescription').textContent =
-    item.modalDescription || item.description;
-    // document.getElementById('modalPrice').textContent = item.price;
-    document.getElementById('modalImage').src = item.image;
-    
+    document.getElementById('modalDescription').textContent = item.description || "";
+    if (document.getElementById('modalImage')) {
+        document.getElementById('modalImage').src = item.image || "";
+    }
+
     const tagsContainer = document.getElementById('modalTags');
     tagsContainer.innerHTML = '';
-    
+
     if (item.tags.includes('popular')) {
         tagsContainer.innerHTML += '<span class="modal-tag badge popular">Popular</span>';
     }
     if (item.isVeg) {
         tagsContainer.innerHTML += '<span class="modal-tag badge veg">Vegetarian</span>';
     }
-    
+
     modal.style.display = 'block';
 }
 
@@ -190,10 +239,8 @@ if (closeBtn) {
     });
 }
 
-if (modal) {
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-}
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
