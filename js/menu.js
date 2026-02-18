@@ -75,6 +75,25 @@ const fullMenuData = {
         { id: 58, name: "Wild Cocodream", description: "Special coconut-based drink", price: "Rs. 600", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["popular", "veg"], isVeg: true },
         { id: 59, name: "Go Wild", description: "Signature energy drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true },
         { id: 60, name: "Come Wild", description: "Refreshing tropical drink", price: "Rs. 550", image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800", tags: ["veg"], isVeg: true }
+    ],
+    smoothie: [
+        { id: 901, name: "Wild CocoDream", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 902, name: "Go Wild", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 903, name: "Come Wild", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
+    ],
+    desserts: [
+        { id: 904, name: "Creme Brulee", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 905, name: "Chocolate & Banana Hoppers", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 906, name: "Fruits Hoppers", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 907, name: "Fruit Salad", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 908, name: "Caramel Pudding", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 909, name: "Sweet Coconut Honey Pancake", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 910, name: "Sweet Coconut Honey Milk Rice (70z)", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 911, name: "Chocolate Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 912, name: "Chocolate & Banana Roti", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true },
+        { id: 913, name: "Mango & Honey Roti", description: "Rich Sri Lankan coffee with creamy milk", price: "Rs. 350", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 914, name: "Sweet Coconut Honey Roti", description: "Pure Ceylon coffee", price: "Rs. 300", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800", tags: [], isVeg: true },
+        { id: 915, name: "Pudding", description: "Traditional Sri Lankan tea with milk", price: "Rs. 300", image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800", tags: [], isVeg: true }
     ]
 };
 
