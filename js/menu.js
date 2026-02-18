@@ -30,16 +30,15 @@ const fullMenuData = {
         { id: 109, name: "Go Wild Cheese Veg Kottu", group: "Go Wild Cheese", description: "Cheesy vegetarian kottu", tags: [], isVeg: true }
     ],
     hoppers: [
-        { id: 9, name: "All You Can Eat Hoppers Special", description: "Unlimited hoppers - traditional Sri Lankan comfort food", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
-        { id: 10, name: "Plain Hopper", description: "Rice flour, coconut milk, salt", price: "Rs. 150", image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: ["veg"], isVeg: true },
-        { id: 11, name: "Egg Hopper", description: "Classic hopper with egg", price: "Rs. 350", image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: [], isVeg: false },
-        { id: 12, name: "Egg & Chicken Hopper", description: "Hopper with egg and chicken", price: "Rs. 550", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
-        { id: 13, name: "Egg & Cheese Hopper", description: "Hopper with egg and melted cheese", price: "Rs. 450", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
-        { id: 14, name: "Egg, Chicken & Cheese Hopper", description: "Ultimate hopper with egg, chicken and cheese", price: "Rs. 650", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
-        { id: 15, name: "English Breakfast Hopper", description: "Hopper with bacon, sausage and egg", price: "Rs. 800", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: [], isVeg: false },
-        { id: 16, name: "Bacon & Sausage Hopper", description: "With egg hopper", price: "Rs. 750", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: [], isVeg: false },
-        { id: 17, name: "Fruit Hopper", description: "Sweet hopper with fresh fruits", price: "Rs. 600", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true },
-        { id: 18, name: "Chocolate & Banana Hopper", description: "Sweet hopper with chocolate and banana", price: "Rs. 450", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true }
+        { id: 9, name: "All You Can Eat Hoppers Special", description: "Unlimited hoppers - traditional Sri Lankan comfort food", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
+        { id: 10, name: "Plain Hopper", description: "Rice flour, coconut milk, salt",  image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: ["veg"], isVeg: true },
+        { id: 11, name: "Egg Hopper", description: "Classic hopper with egg", image: "https://images.unsplash.com/photo-1562158147-f8b5a7d0e1fc?w=800", tags: [], isVeg: false },
+        { id: 12, name: "Egg & Chicken Hopper", description: "Hopper with egg and chicken", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
+        { id: 13, name: "Egg & Cheese Hopper", description: "Hopper with egg and melted cheese",  image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: ["popular"], isVeg: false },
+        { id: 14, name: "Egg, Chicken & Cheese Hopper", description: "Ultimate hopper with egg, chicken and cheese", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800", tags: [], isVeg: false },
+        { id: 15, name: "Egg, Bacon & Sausage Hopper", description: "Hopper with bacon, sausage and egg",  image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800", tags: [], isVeg: false },
+        { id: 17, name: "Mixed Fruit Hopper", description: "Sweet hopper with fresh fruits", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true },
+        { id: 18, name: "Chocolate & Banana Hopper", description: "Sweet hopper with chocolate and banana", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800", tags: ["veg"], isVeg: true }
     ],
 rice: [
         { id: 28, name: "All You Can Eat Rice & Curry", description: "Unlimited rice and curry buffet", price: "Rs. 1,500", image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800", tags: ["popular"], isVeg: false },
