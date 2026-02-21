@@ -114,7 +114,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920') center/cover;
+    background: url('../pages/images/locations/IMG_9286.jpg') center/cover;
     text-align: center;
     margin-top: 70px;
 }
@@ -412,7 +412,7 @@ body {
 /* Experience Section */
 .experience {
     padding: 120px 0;
-    background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920') center/cover;
+    background: url('../images/homepage/unforgattable%20experience.jpg') center 65% / cover no-repeat;
     position: relative;
     text-align: center;
 }
