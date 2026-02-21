@@ -190,7 +190,7 @@ function scrollToMenuSection() {
     const menuSection = document.querySelector('.menu-items');
     if (!menuSection) return;
 
-    const yOffset = -80;
+    const yOffset = -120;
     const y = menuSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({
@@ -282,9 +282,9 @@ function displayMenuItems(category) {
             const groupId = groupName.replace(/\s+/g, "-").toLowerCase();
 
             menuItemsContainer.innerHTML += `
-                <div class="menu-group-title">${groupName}</div>
-                <div class="menu-group-grid" id="${groupId}"></div>
-            `;
+                <div class="menu-group-title" style="grid-column: 1 / -1;">${groupName}</div>
+                <div class="menu-group-grid menu-items" id="${groupId}" style="grid-column: 1 / -1;"></div>
+              `;
 
             const grid = document.getElementById(groupId);
 
@@ -307,7 +307,7 @@ function displayMenuItems(category) {
             const itemCategory = card.getAttribute('data-category');
             const clickedItem = (fullMenuData[itemCategory] || []).find(i => i.id === itemId);
 
-            // 🔥 Redirect logic with back support
+            //Redirect logic with back support
             if (clickedItem && clickedItem.redirectCategory) {
 
                 previousCategory = activeCategory; // save source (Breakfast)
@@ -409,7 +409,7 @@ window.addEventListener('click', (e) => {
 });
 
 // =======================================
-// 🔥 BACK BUTTON FIX
+//  BACK BUTTON FIX
 // =======================================
 window.addEventListener('popstate', (event) => {
     if (event.state) {

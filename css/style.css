@@ -1582,6 +1582,21 @@ body {
     }
 }
 
+.menu-group-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 50px 0 20px;
+    color: #6CFF6C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-group-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
 
 
 
