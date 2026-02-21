@@ -190,7 +190,7 @@ function scrollToMenuSection() {
     const menuSection = document.querySelector('.menu-section');
     if (!menuSection) return;
 
-    const yOffset = -80;
+    const yOffset = -280;
     const y = menuSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({
