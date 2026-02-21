@@ -155,6 +155,16 @@ const fullMenuData = {
 };
 
 
+// =======================================
+// Global State
+// =======================================
+let activeCategory = 'breakfast';
+let activeDrinkFilter = 'all';
+let previousCategory = null;   //  for back navigation fix
+
+// =======================================
+// Navbar
+// =======================================
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
@@ -166,159 +176,199 @@ if (hamburger) {
 }
 
 // =======================================
-// Tabs + Drink Filters
+// Tabs + Filters
 // =======================================
 const mainTabBtns = document.querySelectorAll('.tab-btn[data-category]');
 const drinkFilterWrap = document.getElementById('drinkFilters');
 const drinkBtns = document.querySelectorAll('.drink-btn');
 const menuItemsContainer = document.getElementById('menuItemsFull');
 
-let activeCategory = 'breakfast';
-let activeDrinkFilter = 'all';
+// =======================================
+// Scroll Helper
+// =======================================
+function scrollToMenuSection() {
+    const menuSection = document.querySelector('.menu-section');
+    if (!menuSection) return;
 
+    const yOffset = -80;
+    const y = menuSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-// MAIN CATEGORY TAB CLICK
+    window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+    });
+}
+
+// =======================================
+// Main Category Tabs
+// =======================================
 mainTabBtns.forEach(btn => {
-btn.addEventListener('click', () => {
-    mainTabBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    btn.addEventListener('click', () => {
+        mainTabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-    activeCategory = btn.getAttribute('data-category');
+        activeCategory = btn.getAttribute('data-category');
 
-    // Show/hide drink filter row
-    if (activeCategory === 'drinks') {
-    if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
-      // reset to ALL whenever entering drinks
-        setActiveDrinkFilter('hot');
-    } else {
-    if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
-        activeDrinkFilter = 'all';
-    }
+        history.pushState({ category: activeCategory }, "", `#${activeCategory}`);
 
-    displayMenuItems(activeCategory);
+        if (activeCategory === 'drinks') {
+            if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+            setActiveDrinkFilter('hot');
+        } else {
+            if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+            activeDrinkFilter = 'all';
+        }
+
+        displayMenuItems(activeCategory);
+        scrollToMenuSection();
+    });
 });
-});
 
-// DRINK FILTER CLICK
+// =======================================
+// Drink Filters
+// =======================================
 drinkBtns.forEach(btn => {
-btn.addEventListener('click', () => {
-    const type = btn.getAttribute('data-drink');
-    setActiveDrinkFilter(type);
-    displayMenuItems('drinks');
-});
+    btn.addEventListener('click', () => {
+        const type = btn.getAttribute('data-drink');
+        setActiveDrinkFilter(type);
+        displayMenuItems('drinks');
+        scrollToMenuSection();
+    });
 });
 
 function setActiveDrinkFilter(type) {
     activeDrinkFilter = type;
     drinkBtns.forEach(b => b.classList.remove('active'));
     const activeBtn = document.querySelector(`.drink-btn[data-drink="${type}"]`);
-if (activeBtn) activeBtn.classList.add('active');
+    if (activeBtn) activeBtn.classList.add('active');
 }
 
-
+// =======================================
+// Initial Load
+// =======================================
 displayMenuItems(activeCategory);
 
 // =======================================
-// Render Items (keeps same card format)
+// Render Menu
 // =======================================
 function displayMenuItems(category) {
-  if (!menuItemsContainer) return;
+    if (!menuItemsContainer) return;
 
-  let items = fullMenuData[category] || [];
+    let items = fullMenuData[category] || [];
 
-  // Apply drink filter only for drinks
-  if (category === 'drinks' && activeDrinkFilter !== 'all') {
-    items = items.filter(i => i.drinkType === activeDrinkFilter);
-  }
+    // drink filter
+    if (category === 'drinks' && activeDrinkFilter !== 'all') {
+        items = items.filter(i => i.drinkType === activeDrinkFilter);
+    }
 
-  // Empty
-  if (items.length === 0) {
-    menuItemsContainer.innerHTML =
-      '<p style="text-align:center; color: var(--text-gray);">No items available in this category.</p>';
-    return;
-  }
-
-  menuItemsContainer.innerHTML = '';
-
-  // Special grouping for kottu (your existing logic)
-  if (category === "kottu") {
-    const grouped = {};
-    items.forEach(item => {
-      const group = item.group || "Others";
-      if (!grouped[group]) grouped[group] = [];
-      grouped[group].push(item);
-    });
-
-    Object.keys(grouped).forEach(groupName => {
-      const groupId = groupName.replace(/\s+/g, "-").toLowerCase();
-
-      menuItemsContainer.innerHTML += `
-        <div class="menu-group-title">${groupName}</div>
-        <div class="menu-group-grid" id="${groupId}"></div>
-      `;
-
-      const grid = document.getElementById(groupId);
-
-      grouped[groupName].forEach(item => {
-        grid.innerHTML += menuCardTemplate(item, category);
-      });
-    });
-  } else {
-    // Normal grid (same format)
-    menuItemsContainer.innerHTML = items.map(item => menuCardTemplate(item, category)).join('');
-  }
-
-  // Click handlers
-  document.querySelectorAll('.menu-item').forEach(card => {
-    card.addEventListener('click', () => {
-      const itemId = parseInt(card.getAttribute('data-id'));
-      const itemCategory = card.getAttribute('data-category');
-      const clickedItem = (fullMenuData[itemCategory] || []).find(i => i.id === itemId);
-
-      // Redirect logic (your breakfast cards)
-      if (clickedItem && clickedItem.redirectCategory) {
-        activeCategory = clickedItem.redirectCategory;
-
-        mainTabBtns.forEach(b => b.classList.remove('active'));
-        const tabToActivate = document.querySelector(`.tab-btn[data-category="${clickedItem.redirectCategory}"]`);
-        if (tabToActivate) tabToActivate.classList.add('active');
-
-        if (activeCategory === 'drinks') {
-          if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
-          setActiveDrinkFilter('all');
-        } else {
-          if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
-        }
-
-        displayMenuItems(clickedItem.redirectCategory);
-
-        document.querySelector('.menu-section')?.scrollIntoView({ behavior: 'smooth' });
+    if (items.length === 0) {
+        menuItemsContainer.innerHTML =
+            '<p style="text-align:center;color:#999;">No items available.</p>';
         return;
-      }
+    }
 
-      openModal(itemId, itemCategory);
+    menuItemsContainer.innerHTML = '';
+
+    // Kottu grouping only
+    if (category === "kottu") {
+        const grouped = {};
+        items.forEach(item => {
+            const group = item.group || "Others";
+            if (!grouped[group]) grouped[group] = [];
+            grouped[group].push(item);
+        });
+
+        Object.keys(grouped).forEach(groupName => {
+            const groupId = groupName.replace(/\s+/g, "-").toLowerCase();
+
+            menuItemsContainer.innerHTML += `
+                <div class="menu-group-title">${groupName}</div>
+                <div class="menu-group-grid" id="${groupId}"></div>
+            `;
+
+            const grid = document.getElementById(groupId);
+
+            grouped[groupName].forEach(item => {
+                grid.innerHTML += menuCardTemplate(item, category);
+            });
+        });
+    } else {
+        menuItemsContainer.innerHTML = items
+            .map(item => menuCardTemplate(item, category))
+            .join('');
+    }
+
+    // ===================================
+    // Card Click Logic
+    // ===================================
+    document.querySelectorAll('.menu-item').forEach(card => {
+        card.addEventListener('click', () => {
+            const itemId = parseInt(card.getAttribute('data-id'));
+            const itemCategory = card.getAttribute('data-category');
+            const clickedItem = (fullMenuData[itemCategory] || []).find(i => i.id === itemId);
+
+            // 🔥 Redirect logic with back support
+            if (clickedItem && clickedItem.redirectCategory) {
+
+                previousCategory = activeCategory; // save source (Breakfast)
+
+                history.pushState(
+                    { 
+                        category: clickedItem.redirectCategory,
+                        from: previousCategory
+                    },
+                    "",
+                    `#${clickedItem.redirectCategory}`
+                );
+
+                activeCategory = clickedItem.redirectCategory;
+
+                mainTabBtns.forEach(b => b.classList.remove('active'));
+                const tabToActivate = document.querySelector(
+                    `.tab-btn[data-category="${clickedItem.redirectCategory}"]`
+                );
+                if (tabToActivate) tabToActivate.classList.add('active');
+
+                if (activeCategory === 'drinks') {
+                    if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+                    setActiveDrinkFilter('hot');
+                } else {
+                    if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+                }
+
+                displayMenuItems(clickedItem.redirectCategory);
+                scrollToMenuSection();
+                return;
+            }
+
+            openModal(itemId, itemCategory);
+        });
     });
-  });
 }
 
+// =======================================
+// Card Template
+// =======================================
 function menuCardTemplate(item, category) {
     const price = item.price ? item.price : "";
-  return `
-    <div class="menu-item" data-id="${item.id}" data-category="${category}">
-        <div class="menu-item-header">
-        <h3 class="menu-item-title">${item.name}</h3>
-        <div class="menu-item-badges">
-          ${item.tags?.includes("popular") ? '<span class="badge popular">Popular</span>' : ""}
-          ${item.isVeg ? '<span class="badge veg">Veg</span>' : ""}
+    return `
+        <div class="menu-item" data-id="${item.id}" data-category="${category}">
+            <div class="menu-item-header">
+                <h3 class="menu-item-title">${item.name}</h3>
+                <div class="menu-item-badges">
+                    ${item.tags?.includes("popular") ? '<span class="badge popular">Popular</span>' : ""}
+                    ${item.isVeg ? '<span class="badge veg">Veg</span>' : ""}
+                </div>
+            </div>
+            ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
+            <div class="menu-item-price">${price}</div>
         </div>
-      </div>
-      ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ""}
-      <div class="menu-item-price">${price}</div>
-    </div>
-  `;
+    `;
 }
 
-
+// =======================================
+// Modal
+// =======================================
 const modal = document.getElementById('menuModal');
 const closeBtn = document.getElementById('closeModal');
 
@@ -328,6 +378,7 @@ function openModal(itemId, category) {
 
     document.getElementById('modalTitle').textContent = item.name;
     document.getElementById('modalDescription').textContent = item.description || "";
+
     if (document.getElementById('modalImage')) {
         document.getElementById('modalImage').src = item.image || "";
     }
@@ -335,7 +386,7 @@ function openModal(itemId, category) {
     const tagsContainer = document.getElementById('modalTags');
     tagsContainer.innerHTML = '';
 
-    if (item.tags.includes('popular')) {
+    if (item.tags?.includes('popular')) {
         tagsContainer.innerHTML += '<span class="modal-tag badge popular">Popular</span>';
     }
     if (item.isVeg) {
@@ -354,5 +405,36 @@ if (closeBtn) {
 window.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = 'none';
+    }
+});
+
+// =======================================
+// 🔥 BACK BUTTON FIX
+// =======================================
+window.addEventListener('popstate', (event) => {
+    if (event.state) {
+
+        // If redirected from breakfast → return to breakfast
+        if (event.state.from) {
+            activeCategory = event.state.from;
+        } else if (event.state.category) {
+            activeCategory = event.state.category;
+        }
+
+        mainTabBtns.forEach(b => b.classList.remove('active'));
+        const tabToActivate = document.querySelector(
+            `.tab-btn[data-category="${activeCategory}"]`
+        );
+        if (tabToActivate) tabToActivate.classList.add('active');
+
+        if (activeCategory === 'drinks') {
+            if (drinkFilterWrap) drinkFilterWrap.style.display = 'flex';
+            setActiveDrinkFilter('hot');
+        } else {
+            if (drinkFilterWrap) drinkFilterWrap.style.display = 'none';
+        }
+
+        displayMenuItems(activeCategory);
+        scrollToMenuSection();
     }
 });
