@@ -187,7 +187,7 @@ const menuItemsContainer = document.getElementById('menuItemsFull');
 // Scroll Helper
 // =======================================
 function scrollToMenuSection() {
-    const menuSection = document.querySelector('.menu-section');
+    const menuSection = document.querySelector('.menu-items');
     if (!menuSection) return;
 
     const yOffset = -80;
