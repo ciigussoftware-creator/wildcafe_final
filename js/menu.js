@@ -299,7 +299,7 @@ function displayMenuItems(category) {
     }
 
     // ===================================
-    // Card Click Logic
+    // Card Click Logics
     // ===================================
     document.querySelectorAll('.menu-item').forEach(card => {
         card.addEventListener('click', () => {
