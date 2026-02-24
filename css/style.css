@@ -87,10 +87,28 @@ body {
     font-weight: 500;
     transition: color 0.3s;
     font-size: 15px;
+    position: relative;
 }
 
 .nav-menu a:hover {
     color: var(--primary-green);
+}
+
+/* Active menu item styling - highlights current page */
+.nav-menu a.active {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* Green underline for active menu item */
+.nav-menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-green);
 }
 
 .hamburger {
@@ -1050,8 +1068,19 @@ body {
         padding: 30px 0;
     }
 
+    /* Show mobile menu when hamburger is clicked */
     .nav-menu.active {
         left: 0;
+    }
+
+    /* Active menu item underline - centered below text in mobile view */
+    .nav-menu a.active::after {
+        top: 100%;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        margin-top: 8px;
     }
 
     .hamburger {
