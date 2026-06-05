@@ -6,14 +6,14 @@
 }
 
 :root {
-    --primary-green: #3db854;
-    --dark-green: #2d5016;
-    --dark-bg: #0a0a0a;
-    --darker-bg: #1a1a1a;
-    --text-light: #e0e0e0;
-    --text-gray: #a0a0a0;
-    --border-color: #2a2a2a;
-    --hover-green: #45d063;
+    --primary-green: #2e9e47;
+    --dark-green: #1a6b2a;
+    --dark-bg: #f5f0e8;
+    --darker-bg: #ede8dc;
+    --text-light: #1a1a14;
+    --text-gray: #5a5a4a;
+    --border-color: #d4cfc4;
+    --hover-green: #25873c;
 }
 
 body {
@@ -35,11 +35,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: #1a2e1a;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 15px 0;
     border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    /* box-shadow: 0 2px 12px #ffffff; */
 }
 
 .logo-link{
@@ -82,7 +84,8 @@ body {
 }
 
 .nav-menu a {
-    color: var(--text-light);
+    /* color: var(--text-light); */
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -125,7 +128,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.5));
 }
 
 .hero-content {
@@ -149,7 +152,7 @@ body {
 }
 
 .rating span {
-    color: var(--text-light);
+    color: #f0f0f0;
     margin-left: 8px;
     font-size: 16px;
 }
@@ -159,19 +162,22 @@ body {
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.45);
 }
 
 .hero .highlight {
-    color: var(--primary-green);
+    color: #6dde85;
 }
 
 .hero-subtitle {
     font-size: 18px;
-    color: var(--text-gray);
+    color: rgba(255,255,255,0.88);
     margin-bottom: 35px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 .hero-buttons {
@@ -201,17 +207,18 @@ body {
 .btn-primary:hover {
     background-color: var(--hover-green);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(61, 184, 84, 0.3);
+    box-shadow: 0 10px 25px rgba(46, 158, 71, 0.35);
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: var(--text-light);
-    border: 2px solid var(--primary-green);
+    background-color: rgba(255,255,255,0.15);
+    color: #ffffff;
+    border: 2px solid rgba(255,255,255,0.8);
+    backdrop-filter: blur(4px);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-green);
+    background-color: rgba(255,255,255,0.3);
     transform: translateY(-2px);
 }
 
@@ -226,11 +233,11 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--text-gray);
+    color: rgba(255,255,255,0.82);
 }
 
 .info-item i {
-    color: var(--primary-green);
+    color: #6dde85;
     font-size: 18px;
 }
 
@@ -245,6 +252,7 @@ body {
     font-size: 42px;
     margin-bottom: 15px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .section-subtitle {
@@ -267,6 +275,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
 .offer-card img {
@@ -285,13 +294,14 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
     padding: 40px 20px 20px;
 }
 
 .offer-overlay h3 {
     font-size: 24px;
     font-weight: 700;
+    color: #ffffff;
 }
 
 /* Menu Section */
@@ -305,6 +315,7 @@ body {
     font-size: 42px;
     margin-bottom: 40px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .menu-tabs {
@@ -345,18 +356,19 @@ body {
 }
 
 .menu-item {
-    background-color: var(--darker-bg);
+    background-color: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 25px;
     cursor: pointer;
-    transition: all 0.3s;  
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .menu-item:hover {
     border-color: var(--primary-green);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(61, 184, 84, 0.1);
+    box-shadow: 0 10px 30px rgba(46, 158, 71, 0.12);
 }
 
 .menu-item-header {
@@ -424,7 +436,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.55);
 }
 
 .experience .container {
@@ -436,10 +448,13 @@ body {
     font-size: 42px;
     margin-bottom: 20px;
     font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .experience .section-subtitle {
     margin-bottom: 40px;
+    color: rgba(255,255,255,0.88);
 }
 
 /* About Section */
@@ -457,6 +472,7 @@ body {
     font-size: 42px;
     margin-bottom: 15px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .highlight {
@@ -479,6 +495,7 @@ body {
     font-size: 32px;
     margin-bottom: 25px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .story-content p {
@@ -492,17 +509,13 @@ body {
     border-radius: 16px;
     overflow: hidden;
     height: 500px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
 
 .story-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.values-section {
-    text-align: center;
-    margin-bottom: 80px;
 }
 
 .values-section h3 {
@@ -521,8 +534,6 @@ body {
   display: grid;
   gap: 30px;
   margin-top: 50px;
-
-  /* 3 nice columns on large screens */
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -537,8 +548,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-
 
 .value-card {
     background-color: var(--darker-bg);
@@ -555,7 +564,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.45;     /* CHANGED */
+  opacity: 1;     /* CHANGED */
   z-index: 0;
 }
 
@@ -571,15 +580,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
-
-/* keep card content above image + overlay */
-.value-card > *{
-  position: relative;
-  z-index: 1;
-}
-
-
 
 .value-card:hover {
     border-color: var(--primary-green);
@@ -607,39 +607,15 @@ body {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 700;
+    color: white
 }
 
 .value-card p {
-    color: var(--text-gray);
+    /* color: var(--text-gray); */
+    color: white;
     font-size: 14px;
     line-height: 1.6;
 }
-/* 
-.quote-section {
-    background: linear-gradient(135deg, rgba(61, 184, 84, 0.1), rgba(45, 80, 22, 0.1));
-    border-left: 4px solid var(--primary-green);
-    padding: 50px 60px;
-    border-radius: 12px;
-}
-
-.quote-section blockquote {
-    margin: 0;
-}
-
-.quote-section p {
-    font-size: 24px;
-    font-style: italic;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: var(--text-light);
-}
-
-.quote-section cite {
-    font-size: 16px;
-    color: var(--primary-green);
-    font-style: normal;
-    font-weight: 600;
-} */
 
 /* Gallery Section */
 .gallery-section {
@@ -652,6 +628,7 @@ body {
     font-size: 42px;
     margin-bottom: 15px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .gallery-section .section-subtitle {
@@ -671,6 +648,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
 }
 
 .gallery-item img {
@@ -699,6 +677,7 @@ body {
     font-size: 42px;
     margin-bottom: 15px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .contact-grid {
@@ -716,22 +695,24 @@ body {
 }
 
 .contact-card {
-    background-color: var(--darker-bg);
+    background-color: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 16px 18px;
     transition: all 0.3s;
     height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .contact-card:hover {
     border-color: var(--primary-green);
+    box-shadow: 0 6px 20px rgba(46,158,71,0.10);
 }
 
 .contact-icon {
     width: 44px;
     height: 44px;
-    background-color: rgba(61, 184, 84, 0.1);
+    background-color: rgba(46, 158, 71, 0.1);
     border: 2px solid var(--primary-green);
     border-radius: 50%;
     display: flex;
@@ -749,6 +730,7 @@ body {
     font-size: 17px;
     margin-bottom: 8px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .contact-card p {
@@ -782,7 +764,7 @@ body {
 .social-link {
     width: 42px;
     height: 42px;
-    background-color: rgba(61, 184, 84, 0.1);
+    background-color: rgba(46, 158, 71, 0.08);
     border: 2px solid var(--primary-green);
     border-radius: 50%;
     display: flex;
@@ -805,6 +787,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .contact-section .social-card .social-links{
@@ -824,9 +807,9 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #000;
+    background-color: #1a2e1a;
     padding: 60px 0 20px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-grid {
@@ -837,27 +820,26 @@ body {
 }
 
 .footer-logo {
-  display: flex;
+    display: flex;
     align-items: center;
     gap: 12px;
     font-size: 20px;
     font-weight: 700;
-    color: var(--primary-green);
+    color: #6dde85;
 }
 
 .footer-logo .brand-logo{
-  width: auto; 
-  height: 52px; 
-  border-radius: 30px;
-  object-fit: cover;
-  display: inline-block;
-  transform: scale(2);    
+    width: auto; 
+    height: 52px; 
+    border-radius: 30px;
+    object-fit: cover;
+    display: inline-block;
+    transform: scale(2);    
 }
-
 
 .footer-about p,
 .footer-contact p {
-    color: var(--text-gray);
+    color: rgba(255,255,255,0.65);
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -865,7 +847,7 @@ body {
 .footer h3 {
     font-size: 18px;
     margin-bottom: 20px;
-    color: var(--text-light);
+    color: #ffffff;
 }
 
 .footer-links ul {
@@ -873,7 +855,7 @@ body {
 }
 
 .footer-links a {
-    color: var(--text-gray);
+    color: rgba(255,255,255,0.65);
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
@@ -882,11 +864,11 @@ body {
 }
 
 .footer-links a:hover {
-    color: var(--primary-green);
+    color: #6dde85;
 }
 
 .footer-contact i {
-    color: var(--primary-green);
+    color: #6dde85;
     margin-right: 8px;
 }
 
@@ -900,11 +882,11 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--darker-bg);
+    background-color: rgba(255,255,255,0.08);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-green);
+    color: #6dde85;
     transition: all 0.3s;
 }
 
@@ -916,11 +898,11 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-bottom p {
-    color: var(--text-gray);
+    color: rgba(255,255,255,0.45);
     font-size: 14px;
 }
 
@@ -933,7 +915,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(5px);
 }
 
@@ -941,10 +923,11 @@ body {
     position: relative;
     margin: 5% auto;
     max-width: 900px;
-    background-color: var(--darker-bg);
+    background-color: #ffffff;
     border-radius: 16px;
     overflow: hidden;
     animation: slideDown 0.3s ease-out;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
 }
 
 @keyframes slideDown {
@@ -999,7 +982,7 @@ body {
 
 .modal-info {
     padding: 50px 40px;
-    background-color: #0f1419;
+    background-color: #faf8f4;
 }
 
 #modalTitle {
@@ -1043,11 +1026,12 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: rgba(10, 10, 10, 0.98);
+        background-color: #1a2e1a;
         width: 100%;
         text-align: center;
         transition: 0.3s;
         padding: 30px 0;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .nav-menu.active {
@@ -1189,70 +1173,27 @@ body {
 
 /* Value Cards */
 .values-section {
+    text-align: center;
     margin-top: 80px;
 }
 
 .values-grid {
     display: grid;
-
-    /* 3 cards (Our Locations) */
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-
-    /* keeps spacing balanced on wide screens */
     margin-top: 50px;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-.value-card {
-    background-color: var(--darker-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 35px 25px;
-    text-align: center;
-    transition: all 0.3s;
-}
-
-.value-card:hover {
-    border-color: var(--primary-green);
-    transform: translateY(-5px);
-}
-
-.value-icon{
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 20px;     /* centers the icon container */
-  border-radius: 50%;
-  display: flex;           /* centers emoji inside */
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(61, 184, 84, 0.1);
-  border: 2px solid var(--primary-green);
-  font-size: 34px;
-}
-
-
-.value-card h4 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: var(--text-light);
-}
-
-.value-card p {
-    color: var(--text-gray);
-    font-size: 14px;
-    line-height: 1.6;
-}
-
 /* Quote Section */
 .quote-section {
-    background-color: var(--darker-bg);
+    background: linear-gradient(135deg, rgba(46, 158, 71, 0.08), var(--darker-bg));
     padding: 80px 20px;
     text-align: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .quote-section blockquote {
@@ -1280,6 +1221,8 @@ body {
 .info-banner {
     background-color: var(--darker-bg);
     padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .info-grid {
@@ -1325,6 +1268,7 @@ body {
     font-size: 42px;
     margin-bottom: 15px;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .section-header p {
@@ -1369,6 +1313,7 @@ body {
     height: 500px;
     border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
 
 .about-image img {
@@ -1391,16 +1336,18 @@ body {
 }
 
 .menu-card {
-    background-color: var(--dark-bg);
+    background-color: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .menu-card:hover {
     border-color: var(--primary-green);
     transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(46,158,71,0.12);
 }
 
 .menu-image {
@@ -1467,7 +1414,7 @@ body {
     align-items: center;
     gap: 15px;
     padding: 20px 40px;
-    background-color: var(--darker-bg);
+    background-color: #ffffff;
     border: 2px solid var(--primary-green);
     border-radius: 12px;
     color: var(--text-light);
@@ -1475,6 +1422,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
 }
 
 .social-btn i {
@@ -1484,7 +1432,9 @@ body {
 
 .social-btn:hover {
     background-color: var(--primary-green);
+    color: white;
     transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(46,158,71,0.2);
 }
 
 .social-btn:hover i {
@@ -1494,12 +1444,11 @@ body {
 /* Additional Responsive Adjustments */
 @media (max-width: 968px) {
     .values-grid {
-        /* about us */
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
         margin-top: 40px;
     }
-    /* Ella spacing fix still needed on tablet */
+
     .values-grid > .value-card:nth-of-type(1) h4{
         margin-bottom: 45px;
     }
@@ -1524,7 +1473,6 @@ body {
         font-size: 22px;
     }
 
-    /* contact section (responsive) */
     .contact-info {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1537,19 +1485,19 @@ body {
 @media (max-width: 600px) {
     .values-grid {
         grid-template-columns: 1fr;
-         gap: 18px;
+        gap: 18px;
         margin-top: 25px;
     }
-      .about-header h2{
-    line-height: 1.2;
-  }
 
-  .about-header h2 .highlight{
-    display: block;        /* Wild Cafe Ella goes to next line */
-    white-space: nowrap;   /* keeps Wild Cafe Ella in one line */
-  }
+    .about-header h2{
+        line-height: 1.2;
+    }
 
-     /* On mobile, remove extra gap because cards stack */
+    .about-header h2 .highlight{
+        display: block;
+        white-space: nowrap;
+    }
+
     .values-grid > .value-card:nth-of-type(1) h4{
         margin-bottom: 15px;
     }
@@ -1586,7 +1534,7 @@ body {
     font-size: 26px;
     font-weight: 700;
     margin: 50px 0 20px;
-    color: #6CFF6C;
+    color: var(--primary-green);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1597,14 +1545,3 @@ body {
     gap: 25px;
     margin-bottom: 40px;
 }
-
-
-
-
-
-
-
-
-
-    
-

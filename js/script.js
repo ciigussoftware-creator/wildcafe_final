@@ -180,9 +180,9 @@ if (navMenu) {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.backgroundColor = '#1a2e1a';
     } else {
-        navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.backgroundColor = '#1a2e1a';
     }
 });
 
